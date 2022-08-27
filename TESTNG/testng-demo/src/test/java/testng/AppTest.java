@@ -12,6 +12,6 @@ public class AppTest
     @Parameters({"first","second"})
     @Test
     public void checkCalculateSum(int first, int second){
-        assertEquals(first+second, CalculateSum(first, second));
+        assertEquals(Integer.sum(first,second), CalculateSum(first, second));
     }
 }
