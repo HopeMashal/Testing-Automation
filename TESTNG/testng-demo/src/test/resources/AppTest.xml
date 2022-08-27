@@ -1,0 +1,23 @@
+<suite name="Check Calculate Sum">
+  <test name="Testing with value 0,1">
+    <classes>
+      <parameter name="first" value="0"/>
+      <parameter name="second" value="1"/>
+      <class name="testng.AppTest"/>
+    </classes>
+  </test>
+  <test name="Testing with value -1,2">
+    <classes>
+      <parameter name="first" value="-1"/>
+      <parameter name="second" value="2"/>
+      <class name="testng.AppTest"/>
+    </classes>
+  </test>
+  <test name="Testing with value 3,5">
+    <classes>
+      <parameter name="first" value="3"/>
+      <parameter name="second" value="5"/>
+      <class name="testng.AppTest"/>
+    </classes>
+  </test>
+</suite>
