@@ -1,6 +1,8 @@
 # Testing Automation
 Testing Notes and some exercises
 
+## Test Automation University [GO](https://testautomationu.applitools.com/learningpaths.html)
+
 ## JUnit
 * JUnit5 Documentation [GO](https://junit.org/junit5/docs/current/user-guide/)
 * JUnit Test [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/JUNIT/junitdemo/src)
