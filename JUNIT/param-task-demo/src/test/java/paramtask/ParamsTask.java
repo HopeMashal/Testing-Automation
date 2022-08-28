@@ -34,7 +34,7 @@ public class ParamsTask {
 		int fNum = Integer.parseInt(firstNum);
     int sNum = Integer.parseInt(secondNum);
     int tNum = Integer.parseInt(thirdNum);
-    Assert.assertEquals(Math.max(fNum, sNum), tNum);
+    Assert.assertEquals(tNum,Math.max(fNum, sNum));
 	}
 	
 }

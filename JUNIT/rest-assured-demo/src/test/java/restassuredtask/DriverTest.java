@@ -36,7 +36,7 @@ public class DriverTest {
         FailureList.add(myString);
       }
 		}
-    Assert.assertEquals(FailureList.size(), 0);
+    Assert.assertEquals(0,FailureList.size());
   }
 
   @After 
