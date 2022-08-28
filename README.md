@@ -1,5 +1,5 @@
 # Testing Automation
-Testing Notes and some exercises
+Testing Notes and some exercises & Books
 
 ## Test Automation University [GO](https://testautomationu.applitools.com/learningpaths.html)
 
