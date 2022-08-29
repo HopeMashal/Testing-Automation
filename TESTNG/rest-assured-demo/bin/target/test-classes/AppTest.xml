@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Team Testing Task">
+  <parameter name="JSONpath"  value="./src/test/resources/requests.json"/>
+  <parameter name="CSVpath"  value="./src/test/resources/output_CSV.csv"/>
+  <test  name = "Data provider with csv and json file">
+    <classes>
+       <class name = "teamtask.AppTest" />
+    </classes>
+  </test>
+</suite>
