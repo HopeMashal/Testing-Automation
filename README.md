@@ -12,3 +12,4 @@ Testing Notes and some exercises & Books
 ## TestNG
 * TestNG Documentation [GO](https://testng.org/doc/documentation-main.html)
 * TestNG Test [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/TESTNG/testng-demo/src)
+* Rest Assured Test [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/TESTNG/rest-assured-demo/src)
