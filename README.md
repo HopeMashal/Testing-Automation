@@ -14,4 +14,4 @@ Testing Notes and some exercises & Books
 * TestNG with Parameters Test [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/TESTNG/testng-demo/src)
 * Rest Assured Test [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/TESTNG/rest-assured-demo/src)
 * Team Task [GO](https://github.com/HopeMashal/Team-Testing-Task)
-* Summary Task[GO](https://github.com/HopeMashal/Task-Summary)
+* Summary Task [GO](https://github.com/HopeMashal/Task-Summary)
