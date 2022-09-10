@@ -15,3 +15,6 @@ Testing Notes and some exercises & Books
 * Rest Assured Test [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/TESTNG/rest-assured-demo/src)
 * Team Task [GO](https://github.com/HopeMashal/Team-Testing-Task)
 * Summary Task [GO](https://github.com/HopeMashal/Task-Summary)
+
+## Selenium
+* Selenium with data provider [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/selenium-task/src)
