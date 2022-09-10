@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Check Calculate Sum]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing FireFox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="OpenBrowserTest">
+        <methods>
+          <include name="checkBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- OpenBrowserTest -->
+    </classes>
+  </test> <!-- Testing FireFox(failed) -->
+</suite> <!-- Failed suite [Check Calculate Sum] -->
