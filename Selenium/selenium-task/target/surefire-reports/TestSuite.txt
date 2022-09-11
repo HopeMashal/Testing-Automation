@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 20.749 s <<< FAILURE! - in TestSuite
-SearchTest.testDataCSV  Time elapsed: 2.038 s  <<< FAILURE!
-java.lang.AssertionError: expected [Cypress] but found [JavaScript End to End Testing Framework | cypress.io …]
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 22.048 s <<< FAILURE! - in TestSuite
+SearchTest.testDataCSV  Time elapsed: 2.689 s  <<< FAILURE!
+java.lang.AssertionError: expected [Cypress] but found [il.kayak.com - Cypress - Best Hotels in Cypress]
 	at SearchTest.testDataCSV(SearchTest.java:49)
 
-SearchTest.testDataCSV  Time elapsed: 2.201 s  <<< FAILURE!
+SearchTest.testDataCSV  Time elapsed: 2.688 s  <<< FAILURE!
 java.lang.AssertionError: expected [QTP] but found [What is QTP? | How It Works | Skill & Scope | Need And …]
 	at SearchTest.testDataCSV(SearchTest.java:49)
 
-SearchTest.testDataCSV  Time elapsed: 1.928 s  <<< FAILURE!
+SearchTest.testDataCSV  Time elapsed: 2.533 s  <<< FAILURE!
 java.lang.AssertionError: expected [Appium] but found [Appium: Mobile App Automation Made Awesome.]
 	at SearchTest.testDataCSV(SearchTest.java:49)
 

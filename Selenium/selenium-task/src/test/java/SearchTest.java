@@ -45,7 +45,7 @@ public class SearchTest {
 		searchBar.sendKeys(Search);
 		WebElement btn = driver.findElement(By.xpath("//*[@id=\"search_icon\"]"));
 		btn.click();
-		String result = driver.findElement(By.className("b_title")).getText();
+		String result = driver.findElement(By.xpath("//*[@id=\"b_results\"]//*/h2/a[1]")).getText();
 		Assert.assertEquals(result, Search);
 		Thread.sleep(5000);
 		//driver.navigate().back();
