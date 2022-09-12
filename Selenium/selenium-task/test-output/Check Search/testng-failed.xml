@@ -7,7 +7,7 @@
     <classes>
       <class name="SearchTest">
         <methods>
-          <include name="testDataCSV" invocation-numbers="1 2 3"/>
+          <include name="testDataCSV" invocation-numbers="0 1 2 3"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
         </methods>

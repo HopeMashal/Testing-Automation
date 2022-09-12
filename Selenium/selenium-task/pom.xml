@@ -77,7 +77,7 @@
         <version>3.0.0-M4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>src/test/resources/searchTest.xml</suiteXmlFile>
+            <suiteXmlFile>src/test/resources/expediaTask.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
