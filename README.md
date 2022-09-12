@@ -17,4 +17,5 @@ Testing Notes and some exercises & Books
 * Summary Task [GO](https://github.com/HopeMashal/Task-Summary)
 
 ## Selenium
+* Selenium Documentation [GO](https://www.selenium.dev/documentation/), [GO](https://www.selenium.dev/selenium/docs/api/py/api.html)
 * Selenium with data provider [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/selenium-task/src)
