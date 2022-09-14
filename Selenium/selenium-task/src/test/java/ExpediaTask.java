@@ -98,6 +98,6 @@ public class ExpediaTask {
         String[] result = new String[aLen + bLen];
         System.arraycopy(myStr, 0, result, 0, aLen);
         System.arraycopy(NumList, 0, result, aLen, bLen);
-        CSVFile.writeDataLineByLine("output.csv", ResultList, result);
+        CSVFile.writeDataLineByLine("./src/files/output.csv", ResultList, result);
     }
 }

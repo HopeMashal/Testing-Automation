@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-12T20:19:55 IDT" name="Check Expedia" finished-at="2022-09-12T20:20:06 IDT" duration-ms="10395">
+  <suite started-at="2022-09-14T23:18:23 IDT" name="Check Expedia" finished-at="2022-09-14T23:18:35 IDT" duration-ms="11530">
     <groups>
     </groups>
-    <test started-at="2022-09-12T20:19:55 IDT" name="Testing Expedia" finished-at="2022-09-12T20:20:06 IDT" duration-ms="10395">
+    <test started-at="2022-09-14T23:18:23 IDT" name="Testing Expedia" finished-at="2022-09-14T23:18:35 IDT" duration-ms="11530">
       <class name="ExpediaTask">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:19:52 IDT" name="beforeSuite" finished-at="2022-09-12T20:19:55 IDT" duration-ms="2618" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:21 IDT" name="beforeSuite" finished-at="2022-09-14T23:18:23 IDT" duration-ms="2404" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,14 +16,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[input.csv]]>
+                <![CDATA[./src/files/input.csv]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:19:55 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-12T20:19:58 IDT" duration-ms="2544" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:23 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:18:26 IDT" duration-ms="3077" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:19:58 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-12T20:19:59 IDT" duration-ms="1453" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:26 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:18:28 IDT" duration-ms="1974" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:19:59 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-12T20:20:01 IDT" duration-ms="1721" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:28 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:18:30 IDT" duration-ms="1735" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:20:01 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-12T20:20:02 IDT" duration-ms="1488" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:30 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:18:31 IDT" duration-ms="1327" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:20:02 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-12T20:20:04 IDT" duration-ms="1747" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:31 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:18:33 IDT" duration-ms="1807" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,7 +153,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:20:04 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-12T20:20:06 IDT" duration-ms="1368" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:33 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:18:34 IDT" duration-ms="1538" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,7 +179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-12T20:20:06 IDT" name="afterSuite" finished-at="2022-09-12T20:20:06 IDT" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ExpediaTask@15c43bd9]" started-at="2022-09-14T23:18:35 IDT" name="afterSuite" finished-at="2022-09-14T23:18:35 IDT" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
