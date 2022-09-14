@@ -19,6 +19,7 @@ public class POMTask {
   static String Browser;
   static String CSVPath;
   static WebDriver driver;
+  static String URL = "https://demo.guru99.com/V1/index.php";
   
   @Parameters({"Browser","CSVPath"})
   @BeforeSuite
@@ -44,11 +45,11 @@ public class POMTask {
 
   @Test(dataProvider = "getDataCSV")
   public void testDataCSV(String Id, String Password) throws InterruptedException{
-  	driver.get("https://demo.guru99.com/V1/index.php");
-    Thread.sleep(5000);
+  	driver.get(URL);
+    Thread.sleep(2000);
 	  BankLogin bankLogin = new BankLogin(driver);
     bankLogin.Login(Id, Password);
-    Thread.sleep(5000);
+    Thread.sleep(2000);
     try {
       BankHome bankHome = new BankHome(driver);
       bankHome.Logout();
@@ -60,6 +61,14 @@ public class POMTask {
     } catch (Exception e) {
       Assert.fail("Login Failed");
     }
+  }
+
+  @Test(dataProvider = "getDataCSV")
+  public void testResetDataCSV(String Id, String Password) throws InterruptedException{
+  	driver.get(URL);
+    Thread.sleep(2000);
+	  BankLogin bankLogin = new BankLogin(driver);
+    bankLogin.Reset(Id, Password);
   }
     
   @AfterSuite

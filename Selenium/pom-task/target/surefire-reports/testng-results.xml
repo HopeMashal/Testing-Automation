@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-14T22:13:21 IDT" name="Check POM" finished-at="2022-09-14T22:14:32 IDT" duration-ms="70893">
+  <suite started-at="2022-09-14T23:12:09 IDT" name="Check POM" finished-at="2022-09-14T23:13:21 IDT" duration-ms="71966">
     <groups>
     </groups>
-    <test started-at="2022-09-14T22:13:21 IDT" name="Testing POM" finished-at="2022-09-14T22:14:32 IDT" duration-ms="70893">
+    <test started-at="2022-09-14T23:12:09 IDT" name="Testing POM" finished-at="2022-09-14T23:13:21 IDT" duration-ms="71966">
       <class name="pomtest.POMTask">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:13:20 IDT" name="beforeSuite" finished-at="2022-09-14T22:13:21 IDT" duration-ms="1577" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:07 IDT" name="beforeSuite" finished-at="2022-09-14T23:12:09 IDT" duration-ms="2208" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:13:21 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T22:13:36 IDT" duration-ms="15192" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:09 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:12:18 IDT" duration-ms="9163" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:13:37 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T22:13:50 IDT" duration-ms="13377" status="FAIL">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:18 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:12:23 IDT" duration-ms="4742" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
               <![CDATA[java.lang.AssertionError: PLEASE!! Enter the user ID and password
 at org.testng.Assert.fail(Assert.java:110)
 at pomtest.Pages.BankLogin.Login(BankLogin.java:41)
-at pomtest.POMTask.testDataCSV(POMTask.java:50)
+at pomtest.POMTask.testDataCSV(POMTask.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,7 +99,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:13:50 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T22:13:59 IDT" duration-ms="9300" status="FAIL">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:23 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:12:26 IDT" duration-ms="3669" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -120,7 +120,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
               <![CDATA[java.lang.AssertionError: PLEASE!! Enter the user ID
 at org.testng.Assert.fail(Assert.java:110)
 at pomtest.Pages.BankLogin.Login(BankLogin.java:43)
-at pomtest.POMTask.testDataCSV(POMTask.java:50)
+at pomtest.POMTask.testDataCSV(POMTask.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,7 +159,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:13:59 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T22:14:06 IDT" duration-ms="6468" status="FAIL">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:26 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:12:30 IDT" duration-ms="3582" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -180,7 +180,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
               <![CDATA[java.lang.AssertionError: PLEASE!! Enter the password
 at org.testng.Assert.fail(Assert.java:110)
 at pomtest.Pages.BankLogin.Login(BankLogin.java:42)
-at pomtest.POMTask.testDataCSV(POMTask.java:50)
+at pomtest.POMTask.testDataCSV(POMTask.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -219,7 +219,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:14:06 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T22:14:18 IDT" duration-ms="12160" status="FAIL">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:30 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:12:51 IDT" duration-ms="20657" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -239,7 +239,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Login Failed
 at org.testng.Assert.fail(Assert.java:110)
-at pomtest.POMTask.testDataCSV(POMTask.java:61)
+at pomtest.POMTask.testDataCSV(POMTask.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -278,7 +278,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:14:18 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T22:14:32 IDT" duration-ms="14346" status="FAIL">
+        <test-method signature="testDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:51 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:12:58 IDT" duration-ms="7198" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -298,7 +298,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Login Failed
 at org.testng.Assert.fail(Assert.java:110)
-at pomtest.POMTask.testDataCSV(POMTask.java:61)
+at pomtest.POMTask.testDataCSV(POMTask.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -337,7 +337,103 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pomtest.POMTask@76508ed1]" started-at="2022-09-14T22:14:32 IDT" name="afterSuite" finished-at="2022-09-14T22:14:32 IDT" duration-ms="179" status="PASS">
+        <test-method signature="testResetDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:12:58 IDT" name="testResetDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:13:02 IDT" duration-ms="4611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr438269]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zegYzyh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetDataCSV -->
+        <test-method signature="testResetDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:13:02 IDT" name="testResetDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:13:06 IDT" duration-ms="3509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetDataCSV -->
+        <test-method signature="testResetDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:13:06 IDT" name="testResetDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:13:10 IDT" duration-ms="3654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zegYzyh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetDataCSV -->
+        <test-method signature="testResetDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:13:10 IDT" name="testResetDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:13:13 IDT" duration-ms="3860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr438269]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetDataCSV -->
+        <test-method signature="testResetDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:13:13 IDT" name="testResetDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:13:17 IDT" duration-ms="3741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr4389]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zegYzyh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetDataCSV -->
+        <test-method signature="testResetDataCSV(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:13:17 IDT" name="testResetDataCSV" data-provider="getDataCSV" finished-at="2022-09-14T23:13:21 IDT" duration-ms="3512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr438269]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zegyh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetDataCSV -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pomtest.POMTask@41e36e46]" started-at="2022-09-14T23:13:21 IDT" name="afterSuite" finished-at="2022-09-14T23:13:21 IDT" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

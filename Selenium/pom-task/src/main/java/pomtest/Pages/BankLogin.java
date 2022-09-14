@@ -44,7 +44,11 @@ public class BankLogin {
 		loginBtn.click();
 	}
 
-  public void Reset(){
+  public void Reset(String userID, String password){
+    userIDBox.sendKeys(userID);
+    passwordBox.sendKeys(password);
     resetBtn.click();
+    Assert.assertEquals(userIDBox.getText(), "","Reset Failed");
+    Assert.assertEquals(passwordBox.getText(), "", "Reset Failed");
   }
 }

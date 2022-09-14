@@ -1,24 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 73.047 s <<< FAILURE! - in TestSuite
-pomtest.POMTask.testDataCSV  Time elapsed: 13.38 s  <<< FAILURE!
+Tests run: 12, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 74.869 s <<< FAILURE! - in TestSuite
+pomtest.POMTask.testDataCSV  Time elapsed: 4.746 s  <<< FAILURE!
 java.lang.AssertionError: PLEASE!! Enter the user ID and password
-	at pomtest.POMTask.testDataCSV(POMTask.java:50)
+	at pomtest.POMTask.testDataCSV(POMTask.java:51)
 
-pomtest.POMTask.testDataCSV  Time elapsed: 9.301 s  <<< FAILURE!
+pomtest.POMTask.testDataCSV  Time elapsed: 3.669 s  <<< FAILURE!
 java.lang.AssertionError: PLEASE!! Enter the user ID
-	at pomtest.POMTask.testDataCSV(POMTask.java:50)
+	at pomtest.POMTask.testDataCSV(POMTask.java:51)
 
-pomtest.POMTask.testDataCSV  Time elapsed: 6.468 s  <<< FAILURE!
+pomtest.POMTask.testDataCSV  Time elapsed: 3.584 s  <<< FAILURE!
 java.lang.AssertionError: PLEASE!! Enter the password
-	at pomtest.POMTask.testDataCSV(POMTask.java:50)
+	at pomtest.POMTask.testDataCSV(POMTask.java:51)
 
-pomtest.POMTask.testDataCSV  Time elapsed: 12.16 s  <<< FAILURE!
+pomtest.POMTask.testDataCSV  Time elapsed: 20.658 s  <<< FAILURE!
 java.lang.AssertionError: Login Failed
-	at pomtest.POMTask.testDataCSV(POMTask.java:61)
+	at pomtest.POMTask.testDataCSV(POMTask.java:62)
 
-pomtest.POMTask.testDataCSV  Time elapsed: 14.347 s  <<< FAILURE!
+pomtest.POMTask.testDataCSV  Time elapsed: 7.199 s  <<< FAILURE!
 java.lang.AssertionError: Login Failed
-	at pomtest.POMTask.testDataCSV(POMTask.java:61)
+	at pomtest.POMTask.testDataCSV(POMTask.java:62)
 
