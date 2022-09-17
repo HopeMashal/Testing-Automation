@@ -3,6 +3,7 @@ package elementtask.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 
 public class CheckData {
@@ -16,7 +17,7 @@ public class CheckData {
   WebElement ZIP;
   WebElement Country;
   WebElement Birthday;
-  WebElement Color;
+  WebElement Colors;
   WebElement Age;
   WebElement Website;
   WebElement Phone;
@@ -36,7 +37,7 @@ public class CheckData {
     ZIP = driver.findElement(By.xpath("/html/body/div/p[7]/span[2]"));
     Country = driver.findElement(By.xpath("/html/body/div/p[8]/span[2]"));
     Birthday = driver.findElement(By.xpath("/html/body/div/p[9]/span[2]"));
-    Color = driver.findElement(By.xpath("/html/body/div/p[10]/span[2]"));
+    Colors = driver.findElement(By.xpath("/html/body/div/p[10]/span[2]"));
     Age = driver.findElement(By.xpath("/html/body/div/p[11]/span[2]"));
     Website = driver.findElement(By.xpath("/html/body/div/p[12]/span[2]"));
     Phone = driver.findElement(By.xpath("/html/body/div/p[13]/span[2]"));
@@ -58,7 +59,9 @@ public class CheckData {
     Assert.assertEquals(ZIP.getText(), zip, "ZIP Code NOT Match !!");
     Assert.assertEquals(Country.getText(), country, "Country NOT Match !!");
     Assert.assertEquals(Birthday.getText(), birthday, "Birthday NOT Match !!");
-    //Assert.assertEquals(Color.getAttribute("style"), ("width: 25px; height: 25px; background: "+color), "Color NOT Match !!");
+    Color hexColorEx = Color.fromString(color);
+    Color hexColorAc = Color.fromString(Colors.getCssValue("background-color"));
+    Assert.assertEquals(hexColorAc, hexColorEx, "Color NOT Match !!");
     Assert.assertEquals(Age.getText(), age, "Age NOT Match !!");
     Assert.assertEquals(Website.getText(), website, "Website NOT Match !!");
     Assert.assertEquals(Phone.getText(), phone, "Phone NOT Match !!");
