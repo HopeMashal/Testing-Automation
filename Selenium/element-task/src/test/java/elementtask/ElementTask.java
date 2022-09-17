@@ -67,13 +67,15 @@ public class ElementTask {
     Thread.sleep(2000);
     checkData.ListClick();
     Thread.sleep(2000);
-    int addNum2 = addressPage.AddressCounter();
-    if((addNum1+1) != addNum2) Assert.fail("Address Numbers NOT Match!!");
-    homePage.Logout();
+    AddressPage addressPage2 = new AddressPage(driver);
+    int addNum2 = addressPage2.AddressCounter();
+    Assert.assertEquals(addNum2, (addNum1+1), "Address Numbers NOT Match!!");
   }
     
   @AfterSuite
   public void afterSuite() {
+    HomePage homePage = new HomePage(driver);
+    homePage.Logout();
   	driver.quit();
   }
 }

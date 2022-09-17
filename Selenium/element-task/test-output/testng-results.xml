@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T13:40:39 IDT" name="Check Element Task" finished-at="2022-09-17T13:40:59 IDT" duration-ms="19791">
+  <suite started-at="2022-09-17T15:03:56 IDT" name="Check Element Task" finished-at="2022-09-17T15:04:39 IDT" duration-ms="43174">
     <groups>
     </groups>
-    <test started-at="2022-09-17T13:40:39 IDT" name="Testing Element" finished-at="2022-09-17T13:40:59 IDT" duration-ms="19791">
+    <test started-at="2022-09-17T15:03:56 IDT" name="Testing Element" finished-at="2022-09-17T15:04:39 IDT" duration-ms="43174">
       <class name="elementtask.ElementTask">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T13:40:36 IDT" name="beforeSuite" finished-at="2022-09-17T13:40:39 IDT" duration-ms="3335" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T15:03:52 IDT" name="beforeSuite" finished-at="2022-09-17T15:03:56 IDT" duration-ms="3495" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T13:40:39 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T13:40:44 IDT" duration-ms="4885" status="FAIL">
+        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T15:03:56 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T15:04:08 IDT" duration-ms="11901" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[4]]>
+                <![CDATA[CA]]>
               </value>
             </param>
             <param index="6">
@@ -87,7 +87,7 @@
             </param>
             <param index="12">
               <value>
-                <![CDATA[0904892108]]>
+                <![CDATA[090-489-2108]]>
               </value>
             </param>
             <param index="13">
@@ -101,28 +101,28 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=9faa738f-1c59-4d38-8a79-b3a0d57867a6, value=[Ljava.lang.CharSequence;@7be7e15}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52]]>
+Command: [132894b119eec32c0804abcca671de3a, findChildElements {id=c2ee20b3-a1ec-4cc2-bb0d-031deffd1c18, using=xpath, value=//tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59703/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132894b119eec32c0804abcca671de3a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=9faa738f-1c59-4d38-8a79-b3a0d57867a6, value=[Ljava.lang.CharSequence;@7be7e15}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52
+Command: [132894b119eec32c0804abcca671de3a, findChildElements {id=c2ee20b3-a1ec-4cc2-bb0d-031deffd1c18, using=xpath, value=//tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59703/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132894b119eec32c0804abcca671de3a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -135,10 +135,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at elementtask.Pages.NewAddress.FillData(NewAddress.java:60)
-at elementtask.ElementTask.testCreateTask(ElementTask.java:63)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:219)
+at elementtask.Core.Table.getRowsElements(Table.java:33)
+at elementtask.Core.Table.getRowNumber(Table.java:38)
+at elementtask.Pages.AddressPage.AddressCounter(AddressPage.java:27)
+at elementtask.ElementTask.testCreateTask(ElementTask.java:70)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,11 +173,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateTask -->
-        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T13:40:44 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T13:40:49 IDT" duration-ms="5032" status="FAIL">
+        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T15:04:08 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T15:04:16 IDT" duration-ms="7705" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -202,7 +206,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[6]]>
+                <![CDATA[CT]]>
               </value>
             </param>
             <param index="6">
@@ -222,7 +226,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="9">
               <value>
-                <![CDATA[#19a3ea]]>
+                <![CDATA[#13ec8b]]>
               </value>
             </param>
             <param index="10">
@@ -237,7 +241,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="12">
               <value>
-                <![CDATA[0904891108]]>
+                <![CDATA[090-489-1108]]>
               </value>
             </param>
             <param index="13">
@@ -251,44 +255,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=105.0.5195.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=d638b053-e70d-4549-b6ad-a5bcc2e1a7da, value=[Ljava.lang.CharSequence;@7d04529c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52]]>
+              <![CDATA[Birthday NOT Match !! expected [15/11/1995] but found [12/11/1995]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=105.0.5195.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=d638b053-e70d-4549-b6ad-a5bcc2e1a7da, value=[Ljava.lang.CharSequence;@7d04529c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at elementtask.Pages.NewAddress.FillData(NewAddress.java:60)
-at elementtask.ElementTask.testCreateTask(ElementTask.java:63)
+              <![CDATA[java.lang.AssertionError: Birthday NOT Match !! expected [15/11/1995] but found [12/11/1995]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at elementtask.Pages.CheckData.CheckAddressData(CheckData.java:60)
+at elementtask.ElementTask.testCreateTask(ElementTask.java:66)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -319,11 +298,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateTask -->
-        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T13:40:49 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T13:40:54 IDT" duration-ms="4891" status="FAIL">
+        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T15:04:16 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T15:04:27 IDT" duration-ms="11830" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -352,7 +331,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[9]]>
+                <![CDATA[DC]]>
               </value>
             </param>
             <param index="6">
@@ -372,7 +351,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="9">
               <value>
-                <![CDATA[#13a3ec]]>
+                <![CDATA[#ae13ec]]>
               </value>
             </param>
             <param index="10">
@@ -387,7 +366,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="12">
               <value>
-                <![CDATA[0904899108]]>
+                <![CDATA[090-489-9108]]>
               </value>
             </param>
             <param index="13">
@@ -401,28 +380,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=89e84919-e727-4ef7-8071-295f172ebac4, value=[Ljava.lang.CharSequence;@788ddc1f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52]]>
+Command: [132894b119eec32c0804abcca671de3a, findChildElements {id=dd9f96dd-99b6-4d55-9d79-1dcfc0c4e0a8, using=xpath, value=//tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59703/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132894b119eec32c0804abcca671de3a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=89e84919-e727-4ef7-8071-295f172ebac4, value=[Ljava.lang.CharSequence;@788ddc1f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52
+Command: [132894b119eec32c0804abcca671de3a, findChildElements {id=dd9f96dd-99b6-4d55-9d79-1dcfc0c4e0a8, using=xpath, value=//tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59703/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132894b119eec32c0804abcca671de3a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -435,10 +414,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at elementtask.Pages.NewAddress.FillData(NewAddress.java:60)
-at elementtask.ElementTask.testCreateTask(ElementTask.java:63)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:219)
+at elementtask.Core.Table.getRowsElements(Table.java:33)
+at elementtask.Core.Table.getRowNumber(Table.java:38)
+at elementtask.Pages.AddressPage.AddressCounter(AddressPage.java:27)
+at elementtask.ElementTask.testCreateTask(ElementTask.java:70)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -469,11 +452,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateTask -->
-        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T13:40:54 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T13:40:59 IDT" duration-ms="4933" status="FAIL">
+        <test-method signature="testCreateTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T15:04:27 IDT" name="testCreateTask" data-provider="createTask" finished-at="2022-09-17T15:04:39 IDT" duration-ms="11693" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -502,7 +485,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[10]]>
+                <![CDATA[FL]]>
               </value>
             </param>
             <param index="6">
@@ -522,7 +505,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="9">
               <value>
-                <![CDATA[#19a3e8]]>
+                <![CDATA[#ece613]]>
               </value>
             </param>
             <param index="10">
@@ -537,7 +520,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="12">
               <value>
-                <![CDATA[0904892109]]>
+                <![CDATA[090-489-2109]]>
               </value>
             </param>
             <param index="13">
@@ -551,28 +534,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=d503df9d-075f-42a6-b49a-db17dcca1980, value=[Ljava.lang.CharSequence;@2538bc06}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52]]>
+Command: [132894b119eec32c0804abcca671de3a, findChildElements {id=f6836077-ae7c-4f33-8936-1fcaa3d1752f, using=xpath, value=//tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59703/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132894b119eec32c0804abcca671de3a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.168.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [050a904fccb7f554a035603db426ab52, sendKeysToElement {id=d503df9d-075f-42a6-b49a-db17dcca1980, value=[Ljava.lang.CharSequence;@2538bc06}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56517/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (050a904fccb7f554a035603db426ab52)] -> name: address[interest_climb]]
-Session ID: 050a904fccb7f554a035603db426ab52
+Command: [132894b119eec32c0804abcca671de3a, findChildElements {id=f6836077-ae7c-4f33-8936-1fcaa3d1752f, using=xpath, value=//tbody/tr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59703/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 132894b119eec32c0804abcca671de3a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -585,10 +568,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at elementtask.Pages.NewAddress.FillData(NewAddress.java:60)
-at elementtask.ElementTask.testCreateTask(ElementTask.java:63)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:219)
+at elementtask.Core.Table.getRowsElements(Table.java:33)
+at elementtask.Core.Table.getRowNumber(Table.java:38)
+at elementtask.Pages.AddressPage.AddressCounter(AddressPage.java:27)
+at elementtask.ElementTask.testCreateTask(ElementTask.java:70)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -619,11 +606,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateTask -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T13:40:59 IDT" name="afterSuite" finished-at="2022-09-17T13:40:59 IDT" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:elementtask.ElementTask@738dc9b]" started-at="2022-09-17T15:04:39 IDT" name="afterSuite" finished-at="2022-09-17T15:04:39 IDT" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
