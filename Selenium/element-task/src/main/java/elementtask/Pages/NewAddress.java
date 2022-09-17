@@ -3,6 +3,7 @@ package elementtask.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class NewAddress {
   WebDriver driver;
@@ -13,7 +14,7 @@ public class NewAddress {
   WebElement City;
   WebElement State;
   WebElement ZIP;
-  WebElement Country;
+  WebElement Country1, Country2;
   WebElement Birthday;
   WebElement Color;
   WebElement Age;
@@ -32,7 +33,8 @@ public class NewAddress {
     City = driver.findElement(By.name("address[city]"));
     State = driver.findElement(By.name("address[state]"));
     ZIP = driver.findElement(By.name("address[zip_code]"));
-    Country = driver.findElement(By.name("address[country]"));
+    Country1 = driver.findElement(By.id("address_country_us"));
+    Country2 = driver.findElement(By.id("address_country_canada"));
     Birthday = driver.findElement(By.name("address[birthday]"));
     Color = driver.findElement(By.name("address[color]"));
     Age = driver.findElement(By.name("address[age]"));
@@ -51,9 +53,11 @@ public class NewAddress {
     Address1.sendKeys(address1);
     Address2.sendKeys(address2);
     City.sendKeys(city);
-    State.sendKeys(state);
+    Select states = new Select(State);
+    states.selectByValue(state);
     ZIP.sendKeys(zip);
-    Country.sendKeys(country);
+    if(country.equals("us")) Country1.click();
+    if(country.equals("canada")) Country2.click();
     Birthday.sendKeys(birthday);
     Color.sendKeys(color);
     Age.sendKeys(age);

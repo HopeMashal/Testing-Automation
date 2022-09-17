@@ -69,7 +69,7 @@ public class ElementTask {
     Thread.sleep(2000);
     int addNum2 = addressPage.AddressCounter();
     if((addNum1+1) != addNum2) Assert.fail("Address Numbers NOT Match!!");
-    //homePage.Logout();
+    homePage.Logout();
   }
     
   @AfterSuite

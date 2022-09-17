@@ -49,30 +49,30 @@ public class CheckData {
   }
 
   public void CheckAddressData(String firstName,String lastName, String address1, String address2, String city, String state, String zip, String country, String birthday, String color, String age, String website, String phone, String common, String note){
-    if(FName.getText() != firstName) Assert.fail("First name NOT Match !!");
-    if(LName.getText() != lastName) Assert.fail("Last name NOT Match !!");
-    if(Address1.getText() != address1) Assert.fail("Address 1 NOT Match !!");
-    if(Address2.getText() != address2) Assert.fail("Address 2 NOT Match !!");
-    if(City.getText() != city) Assert.fail("City NOT Match !!");
-    if(State.getText() != state) Assert.fail("State NOT Match !!");
-    if(ZIP.getText() != zip) Assert.fail("ZIP Code NOT Match !!");
-    if(Country.getText() != country) Assert.fail("Country NOT Match !!");
-    if(Birthday.getText() != birthday) Assert.fail("Birthday NOT Match !!");
-    if(Color.getText() != color) Assert.fail("Color NOT Match !!");
-    if(Age.getText() != age) Assert.fail("Age NOT Match !!");
-    if(Website.getText() != website) Assert.fail("Website NOT Match !!");
-    if(Phone.getText() != phone) Assert.fail("Phone NOT Match !!");
+    Assert.assertEquals(FName.getText(), firstName, "First name NOT Match !!");
+    Assert.assertEquals(LName.getText(), lastName, "Last name NOT Match !!");
+    Assert.assertEquals(Address1.getText(), address1, "Address 1 NOT Match !!");
+    Assert.assertEquals(Address2.getText(), address2, "Address 2 NOT Match !!");
+    Assert.assertEquals(City.getText(), city, "City NOT Match !!");
+    Assert.assertEquals(State.getText(), state, "State NOT Match !!");
+    Assert.assertEquals(ZIP.getText(), zip, "ZIP Code NOT Match !!");
+    Assert.assertEquals(Country.getText(), country, "Country NOT Match !!");
+    Assert.assertEquals(Birthday.getText(), birthday, "Birthday NOT Match !!");
+    //Assert.assertEquals(Color.getAttribute("style"), ("width: 25px; height: 25px; background: "+color), "Color NOT Match !!");
+    Assert.assertEquals(Age.getText(), age, "Age NOT Match !!");
+    Assert.assertEquals(Website.getText(), website, "Website NOT Match !!");
+    Assert.assertEquals(Phone.getText(), phone, "Phone NOT Match !!");
     String[] Commons = common.split(" ");
     for(int i=0; i<Commons.length; i++){
       if(Integer.parseInt(Commons[i]) == 1){
-        if(Common1.getText().toUpperCase() != "YES") Assert.fail("Common Interests 1 NOT Match !!");
+        Assert.assertEquals(Common1.getText().toUpperCase(), "YES", "Common Interests 1 NOT Match !!");
       } else if(Integer.parseInt(Commons[i]) == 2){
-        if(Common2.getText().toUpperCase() != "YES") Assert.fail("Common Interests 2 NOT Match !!");
+        Assert.assertEquals(Common2.getText().toUpperCase(), "YES", "Common Interests 2 NOT Match !!");
       } else if(Integer.parseInt(Commons[i]) == 3){
-        if(Common3.getText().toUpperCase() != "YES") Assert.fail("Common Interests 3 NOT Match !!");
+        Assert.assertEquals(Common3.getText().toUpperCase(), "YES", "Common Interests 3 NOT Match !!");
       }
     }
-    if(Note.getText() != note) Assert.fail("Note NOT Match !!");
+    Assert.assertEquals(Note.getText(), note, "Note NOT Match !!");
   }
 
   public void ListClick(){
