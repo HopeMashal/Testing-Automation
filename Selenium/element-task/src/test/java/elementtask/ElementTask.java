@@ -51,7 +51,7 @@ public class ElementTask {
 
   @Test(dataProvider = "createTask")
   public void testCreateTask(String firstName,String lastName, String address1, String address2, String city, String state, String zip, String country, String birthday, String color, String age, String website, String phone, String common, String note) throws InterruptedException{
-    driver.get(URL);
+    //driver.get(URL);
     HomePage homePage = new HomePage(driver);
     homePage.AddressClick();
     Thread.sleep(2000);
