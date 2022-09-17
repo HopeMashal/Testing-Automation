@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Check View Element Task">
+  <parameter name="Browser" value="chrome"/>
+  <test name="Testing Element - View">
+    <classes>
+      <class name="elementtask.ViewElementTask"/>
+    </classes>
+  </test>
+</suite>

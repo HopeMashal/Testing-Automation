@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Check Edit Element Task">
+  <parameter name="Browser" value="chrome"/>
+  <test name="Testing Element - Edit">
+    <classes>
+      <class name="elementtask.EditElementTask"/>
+    </classes>
+  </test>
+</suite>

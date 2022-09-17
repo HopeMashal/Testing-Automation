@@ -78,6 +78,13 @@ public class CheckData {
     Assert.assertEquals(Note.getText(), note, "Note NOT Match !!");
   }
 
+  public void CheckAddressData(String firstName,String lastName, String city, String state){
+    Assert.assertEquals(FName.getText(), firstName, "First name NOT Match !!");
+    Assert.assertEquals(LName.getText(), lastName, "Last name NOT Match !!");
+    Assert.assertEquals(City.getText(), city, "City NOT Match !!");
+    Assert.assertEquals(State.getText(), state, "State NOT Match !!");
+  }
+
   public void ListClick(){
     ListBtn.click();
   }

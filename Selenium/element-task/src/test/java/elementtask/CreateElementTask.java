@@ -18,7 +18,7 @@ import elementtask.Pages.HomePage;
 import elementtask.Pages.NewAddress;
 import elementtask.Pages.SignIn;
 
-public class ElementTask {
+public class CreateElementTask {
   static String Browser;
   static String CSVPath;
   static WebDriver driver;
@@ -27,9 +27,9 @@ public class ElementTask {
   @Parameters({"Browser","CSVPath"})
   @BeforeSuite
   public void beforeSuite(String Browser,String CSVPath){
-  	ElementTask.Browser = Browser;
-  	ElementTask.CSVPath = CSVPath;
-  	driver = OpenBrowser.openBrowser(ElementTask.Browser);
+  	CreateElementTask.Browser = Browser;
+  	CreateElementTask.CSVPath = CSVPath;
+  	driver = OpenBrowser.openBrowser(CreateElementTask.Browser);
 	  driver.manage().window().maximize();
     driver.get(URL+"/sign_in");
     SignIn signIn = new SignIn(driver);
@@ -38,7 +38,7 @@ public class ElementTask {
 
   @DataProvider
   public static Object[][] createTask() throws Exception{
-    List<String[]> lines = CSVFile.readAllLines(ElementTask.CSVPath);
+    List<String[]> lines = CSVFile.readAllLines(CreateElementTask.CSVPath);
     lines.remove(0);
     Object[][] data = new Object[lines.size()][lines.get(0).length];
     int index = 0;
