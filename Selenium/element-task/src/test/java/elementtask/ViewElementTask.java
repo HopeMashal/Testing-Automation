@@ -2,9 +2,9 @@ package elementtask;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -15,7 +15,6 @@ import elementtask.Core.OpenBrowser;
 import elementtask.Pages.AddressPage;
 import elementtask.Pages.CheckData;
 import elementtask.Pages.HomePage;
-import elementtask.Pages.NewAddress;
 import elementtask.Pages.SignIn;
 
 public class ViewElementTask {
@@ -34,50 +33,30 @@ public class ViewElementTask {
     signIn.Login("hope.mashal@gmail.com", "hope1234");
   }
 
-  /* @Test
-  public void testing() throws InterruptedException{
-    HomePage homePage = new HomePage(driver);
-    homePage.AddressClick();
-    Thread.sleep(2000);
-    AddressPage addressPage = new AddressPage(driver);
-    int addNum1 = addressPage.AddressCounter();
-    System.out.println(addNum1);
-    List<String[]> lines = addressPage.TableData();
-    for(String[] line: lines){
-      for(String el:line){
-        System.out.print(el+" \t");
-      }
-      System.out.println("");
-    }
-  } */
-
   @DataProvider
   public static Object[][] viewTask() throws Exception{
     HomePage homePage = new HomePage(driver);
     homePage.AddressClick();
     Thread.sleep(2000);
     AddressPage addressData = new AddressPage(driver);
-    List<WebElement[]> lines = addressData.TableData();
+    List<String[]> lines = addressData.TableDataXPath();
     Object[][] data = new Object[lines.size()][lines.get(0).length];
     int index = 0;
-    for(WebElement[] line: lines){
+    for(String[] line: lines){
       data[index] = line;
       index++;
     }
-    // for(WebElement[] line: lines){
-    //   for(WebElement el:line){
-    //     System.out.print(el.getText()+" \t");
-    //   }
-    //   System.out.println("");
-    // }
-    // for(int i=0; i<lines.size(); i++){
-    //     System.out.println(lines.get(i)[0].getText());
-    // }
-    return data;
+    Object[][] ReturnData = new Object[lines.size()][5];
+    for(int i=0; i < data.length; i++){
+      for(int j=0; j<5; j++){
+        ReturnData[i][j] = data[i][j];
+      }
+    }
+    return ReturnData;
   }
 
   @Test(dataProvider = "viewTask")
-  public void testViewTask(WebElement firstName,WebElement lastName, WebElement city, WebElement state, WebElement show, WebElement edit, WebElement destroy) throws InterruptedException{
+  public void testViewTask(String firstName,String lastName, String city, String state, String show) throws InterruptedException{
     HomePage homePage = new HomePage(driver);
     homePage.AddressClick();
     Thread.sleep(2000);
@@ -85,14 +64,19 @@ public class ViewElementTask {
     int addNum1 = addressPage.AddressCounter();
     System.out.println(addNum1);
     Thread.sleep(2000);
-    //System.out.println(firstName.getText());
-    /* addressPage.ShowClick(show);
+    String FirstName = driver.findElement(By.xpath(firstName)).getText();
+    String LastName = driver.findElement(By.xpath(lastName)).getText();
+    String City = driver.findElement(By.xpath(city)).getText();
+    String State = driver.findElement(By.xpath(state)).getText();
+    WebElement Show = driver.findElement(By.xpath(show+"/a"));
+    Thread.sleep(2000);
+    Show.click();
     Thread.sleep(2000);
     CheckData checkData = new CheckData(driver);
-    checkData.CheckAddressData(firstName.getText(), lastName.getText(), city.getText(), state.getText());
+    checkData.CheckAddressData(FirstName, LastName, City, State);
     Thread.sleep(2000);
     checkData.ListClick();
-    Thread.sleep(2000); */
+    Thread.sleep(2000);
   }
     
   @AfterSuite

@@ -30,20 +30,14 @@ public class AddressPage {
     return myTable.getRowNumber();
   }
 
-  /* public List<String[]> TableData(){
-    List<String[]> returnData = new ArrayList<String[]>();
-    String[] rowData;
-    List<WebElement> data = myTable.getRowsElements();
-    for(WebElement row:data){
-      List<WebElement> rowElements = row.findElements(By.tagName("td"));
-      rowData = new String[rowElements.size()-3];
-      for(int i=0; i<rowElements.size()-3; i++){
-        rowData[i] = rowElements.get(i).getText();
-      }
-      returnData.add(rowData);
+  public int ColumnCounter(){
+    if(AddressCounter() > 0){
+      List<WebElement> data = myTable.getRowsElements();
+      List<WebElement> rowElements = data.get(0).findElements(By.tagName("td"));
+      return rowElements.size();
     }
-    return returnData;
-  } */
+    return 4;
+  }
 
   public List<WebElement[]> TableData(){
     List<WebElement[]> returnData = new ArrayList<WebElement[]>();
@@ -60,16 +54,17 @@ public class AddressPage {
     return returnData;
   }
 
-  public void ShowClick(WebElement showBtn){
-    showBtn.click();
-  }
-
-  public void EditClick(WebElement editBtn){
-    editBtn.click();
-  }
-
-  public void DestroyClick(WebElement destroyBtn){
-    destroyBtn.click();
+  public List<String[]> TableDataXPath(){
+    List<String[]> returnDataXPath = new ArrayList<String[]>();
+    String[] rowDataXPath;
+    for(int i=0; i<AddressCounter(); i++){
+      rowDataXPath = new String[ColumnCounter()];
+      for(int j=0; j<ColumnCounter(); j++){
+        rowDataXPath[j] = "/html/body/div/table/tbody/tr["+(i+1)+"]/td["+(j+1)+"]";
+      }
+      returnDataXPath.add(rowDataXPath);
+    }
+    return returnDataXPath;
   }
 
 }
