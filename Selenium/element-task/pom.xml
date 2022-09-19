@@ -93,7 +93,7 @@
         <version>3.0.0-M4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>src/test/resources/ViewElementTask.xml</suiteXmlFile>
+            <suiteXmlFile>src/test/resources/EditElementTask.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
