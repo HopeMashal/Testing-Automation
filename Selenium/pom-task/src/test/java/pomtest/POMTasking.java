@@ -12,22 +12,19 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import pomtest.Core.CSVFile;
 import pomtest.Core.OpenBrowser;
 import pomtest.Pages.BankHome;
 import pomtest.Pages.BankLogin;
 
 public class POMTasking {
   static String Browser;
-  static String CSVPath;
   static WebDriver driver;
   static String URL = "https://demo.guru99.com/V1/index.php";
   
-  @Parameters({"Browser","CSVPath"})
+  @Parameters({"Browser"})
   @BeforeSuite
-  public void beforeSuite(String Browser,String CSVPath) throws Exception{
+  public void beforeSuite(String Browser) throws Exception{
   	POMTask.Browser = Browser;
-  	POMTask.CSVPath = CSVPath;
   	driver = OpenBrowser.openBrowser(POMTask.Browser);
 	  driver.manage().window().maximize();
     driver.get(URL);
@@ -38,13 +35,11 @@ public class POMTasking {
 
   @DataProvider
   public static Object[][] getDataCSV() throws Exception{
-    List<String[]> lines = CSVFile.readAllLines(POMTask.CSVPath);
-    lines.remove(0);
-    Object[][] data = new Object[lines.size()][lines.get(0).length];
-    int index = 0;
-    for(String[] line: lines){
-      data[index] = line;
-      index++;
+    List<WebElement> lines = driver.findElements(By.xpath("/html/body/div[3]/div/ul/li/a"));
+    lines.remove(lines.size()-1);
+    Object[][] data = new Object[lines.size()][1];
+    for(int i=0; i<lines.size(); i++){
+      data[i][0] = lines.get(i).getText();
     }
     return data;
   }

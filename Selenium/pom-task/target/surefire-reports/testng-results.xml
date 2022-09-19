@@ -2,28 +2,23 @@
 <testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-19T21:00:23 IDT" name="Check POM" finished-at="2022-09-19T21:01:37 IDT" duration-ms="73851">
+  <suite started-at="2022-09-19T21:14:39 IDT" name="Check POM" finished-at="2022-09-19T21:15:48 IDT" duration-ms="68663">
     <groups>
     </groups>
-    <test started-at="2022-09-19T21:00:23 IDT" name="Testing POM" finished-at="2022-09-19T21:01:37 IDT" duration-ms="73851">
+    <test started-at="2022-09-19T21:14:39 IDT" name="Testing POM" finished-at="2022-09-19T21:15:48 IDT" duration-ms="68663">
       <class name="pomtest.POMTasking">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:00:11 IDT" name="beforeSuite" finished-at="2022-09-19T21:00:23 IDT" duration-ms="12085" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:14:29 IDT" name="beforeSuite" finished-at="2022-09-19T21:14:39 IDT" duration-ms="10073" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[./src/files/xpath.csv]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:00:23 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:00:30 IDT" duration-ms="7465" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:14:39 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:14:46 IDT" duration-ms="7478" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:00:30 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:00:40 IDT" duration-ms="9996" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:14:46 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:14:56 IDT" duration-ms="9550" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:00:40 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:00:49 IDT" duration-ms="8369" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:14:56 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:15:06 IDT" duration-ms="10225" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:00:49 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:01:03 IDT" duration-ms="13912" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:15:06 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:15:16 IDT" duration-ms="9304" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:01:03 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:01:06 IDT" duration-ms="3206" status="FAIL">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:15:16 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:15:19 IDT" duration-ms="3166" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -82,10 +77,10 @@
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.50.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae819f131a70ef2ad82543d9bda712e8, clickElement {id=ef490d26-323e-4002-ad83-f739011aa923}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58288/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ae819f131a70ef2ad82543d9bda712e8)] -> link text: New Account]
-Session ID: ae819f131a70ef2ad82543d9bda712e8]]>
+Command: [f25c69570f2d9243ffde12e7ca991ee4, clickElement {id=d6f27580-9453-4afb-9c99-14e86f7e4fed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64149/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f25c69570f2d9243ffde12e7ca991ee4)] -> link text: New Account]
+Session ID: f25c69570f2d9243ffde12e7ca991ee4]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="addAccount.php">...</a> is not clickable at point (120, 512). Other element would receive the click: <p align="right">...</p>
@@ -93,10 +88,10 @@ Session ID: ae819f131a70ef2ad82543d9bda712e8]]>
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'LAPTOP-TPTMM17A', ip: '192.168.50.247', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae819f131a70ef2ad82543d9bda712e8, clickElement {id=ef490d26-323e-4002-ad83-f739011aa923}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58288/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ae819f131a70ef2ad82543d9bda712e8)] -> link text: New Account]
-Session ID: ae819f131a70ef2ad82543d9bda712e8
+Command: [f25c69570f2d9243ffde12e7ca991ee4, clickElement {id=d6f27580-9453-4afb-9c99-14e86f7e4fed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.29 (eff877e18f76..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64149/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f25c69570f2d9243ffde12e7ca991ee4)] -> link text: New Account]
+Session ID: f25c69570f2d9243ffde12e7ca991ee4
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,7 +106,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pomtest.POMTasking.testDataCSV(POMTasking.java:57)
+at pomtest.POMTasking.testDataCSV(POMTasking.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,7 +145,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:01:06 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:01:14 IDT" duration-ms="8567" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:15:19 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:15:26 IDT" duration-ms="7696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,7 +156,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:01:14 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:01:23 IDT" duration-ms="8046" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:15:26 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:15:34 IDT" duration-ms="7618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,7 +167,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:01:23 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:01:31 IDT" duration-ms="8176" status="PASS">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:15:34 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:15:42 IDT" duration-ms="7920" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,7 +178,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:01:31 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:01:37 IDT" duration-ms="6053" status="FAIL">
+        <test-method signature="testDataCSV(java.lang.String)[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:15:42 IDT" name="testDataCSV" data-provider="getDataCSV" finished-at="2022-09-19T21:15:48 IDT" duration-ms="5577" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -198,7 +193,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Current Title NOT Contains LinkText
 at org.testng.Assert.fail(Assert.java:110)
-at pomtest.POMTasking.testDataCSV(POMTasking.java:70)
+at pomtest.POMTasking.testDataCSV(POMTasking.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -237,7 +232,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataCSV -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:01:37 IDT" name="afterSuite" finished-at="2022-09-19T21:01:38 IDT" duration-ms="1445" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pomtest.POMTasking@76508ed1]" started-at="2022-09-19T21:15:48 IDT" name="afterSuite" finished-at="2022-09-19T21:15:49 IDT" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

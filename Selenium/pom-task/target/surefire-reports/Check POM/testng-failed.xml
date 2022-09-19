@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Check POM]" guice-stage="DEVELOPMENT" verbose="0">
-  <parameter name="CSVPath" value="./src/files/xpath.csv"/>
   <parameter name="Browser" value="chrome"/>
   <test thread-count="5" name="Testing POM(failed)" verbose="0">
     <classes>
