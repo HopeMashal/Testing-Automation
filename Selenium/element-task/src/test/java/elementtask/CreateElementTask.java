@@ -27,10 +27,10 @@ public class CreateElementTask {
   @Parameters({"Browser","CSVPath"})
   @BeforeSuite
   public void beforeSuite(String Browser,String CSVPath){
-  	CreateElementTask.Browser = Browser;
-  	CreateElementTask.CSVPath = CSVPath;
-  	driver = OpenBrowser.openBrowser(CreateElementTask.Browser);
-	  driver.manage().window().maximize();
+    CreateElementTask.Browser = Browser;
+    CreateElementTask.CSVPath = CSVPath;
+    driver = OpenBrowser.openBrowser(CreateElementTask.Browser);
+    driver.manage().window().maximize();
     driver.get(URL+"/sign_in");
     SignIn signIn = new SignIn(driver);
     signIn.Login("hope.mashal@gmail.com", "hope1234");
@@ -75,6 +75,6 @@ public class CreateElementTask {
   public void afterSuite() {
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
-  	driver.quit();
+    driver.quit();
   }
 }

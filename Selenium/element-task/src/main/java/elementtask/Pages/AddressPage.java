@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import elementtask.Core.Table;
 
@@ -65,6 +66,21 @@ public class AddressPage {
       returnDataXPath.add(rowDataXPath);
     }
     return returnDataXPath;
+  }
+
+  public List<String> TableDataXPath(int index){
+    List<String> returnDataXPath = new ArrayList<String>();
+    for(int j=0; j<ColumnCounter(); j++){
+      returnDataXPath.add("/html/body/div/table/tbody/tr["+(index)+"]/td["+(j+1)+"]");
+    }
+    return returnDataXPath;
+  }
+
+  public void CheckAddressData(String firstName, String FNameCurVal,String lastName, String LNameCurVal, String city, String CityCurVal, String state, String StateCurVal){
+    Assert.assertEquals(FNameCurVal, firstName, "First name NOT Match !!");
+    Assert.assertEquals(LNameCurVal, lastName, "Last name NOT Match !!");
+    Assert.assertEquals(CityCurVal, city, "City NOT Match !!");
+    Assert.assertEquals(StateCurVal, state, "State NOT Match !!");
   }
 
 }

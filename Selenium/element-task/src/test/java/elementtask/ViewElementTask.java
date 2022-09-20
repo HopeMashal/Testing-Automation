@@ -25,9 +25,9 @@ public class ViewElementTask {
   @Parameters({"Browser"})
   @BeforeSuite
   public void beforeSuite(String Browser){
-  	ViewElementTask.Browser = Browser;
-  	driver = OpenBrowser.openBrowser(ViewElementTask.Browser);
-	  driver.manage().window().maximize();
+    ViewElementTask.Browser = Browser;
+    driver = OpenBrowser.openBrowser(ViewElementTask.Browser);
+    driver.manage().window().maximize();
     driver.get(URL+"/sign_in");
     SignIn signIn = new SignIn(driver);
     signIn.Login("hope.mashal@gmail.com", "hope1234");
@@ -83,6 +83,6 @@ public class ViewElementTask {
   public void afterSuite() {
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
-  	driver.quit();
+    driver.quit();
   }
 }
