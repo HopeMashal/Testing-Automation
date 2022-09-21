@@ -47,7 +47,7 @@ public class DeleteElementTask {
     }
     Object[][] ReturnData = new Object[lines.size()][1];
     for(int i=0; i < data.length; i++){
-      ReturnData[i][0] = data[0][6];
+      ReturnData[i][0] = data[data.length-1-i][6];
       System.out.println(ReturnData[i][0]);
     }
     return ReturnData;
