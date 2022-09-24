@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -25,7 +25,7 @@ public class CreateElementTask {
   static String URL = "http://a.testaddressbook.com";
   
   @Parameters({"Browser","CSVPath"})
-  @BeforeSuite
+  @BeforeTest
   public void beforeSuite(String Browser,String CSVPath){
     CreateElementTask.Browser = Browser;
     CreateElementTask.CSVPath = CSVPath;
@@ -71,7 +71,7 @@ public class CreateElementTask {
     Assert.assertEquals(addNum2, (addNum1+1), "Address Numbers NOT Match!!");
   }
     
-  @AfterSuite
+  @AfterTest
   public void afterSuite() {
     HomePage homePage = new HomePage(driver);
     homePage.Logout();

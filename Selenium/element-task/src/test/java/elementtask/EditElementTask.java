@@ -5,8 +5,8 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -26,7 +26,7 @@ public class EditElementTask {
   static String[] updateData = new String[]{"Amal", "Akira", "Jerusalem", "Jerusalem", "Jerusalem", "DC", "12222", "canada", "12/11/1997", "#e40486", "25", "https://www.google.com/", "052-433-4233", "3 1", "Be Happy :)"};
   
   @Parameters({"Browser"})
-  @BeforeSuite
+  @BeforeTest
   public void beforeSuite(String Browser){
     ViewElementTask.Browser = Browser;
     driver = OpenBrowser.openBrowser(ViewElementTask.Browser);
@@ -93,7 +93,7 @@ public class EditElementTask {
     Thread.sleep(2000);
   }
     
-  @AfterSuite
+  @AfterTest
   public void afterSuite() {
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
