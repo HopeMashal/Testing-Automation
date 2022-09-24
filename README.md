@@ -21,3 +21,4 @@ Testing Notes and some exercises & Books
 * Selenium with data provider [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/selenium-task/src)
 * Page Object Model [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/pom-task/src)
 * Elements Select [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/element-task/src)
+* Trello Task [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/trello-task/src)
