@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Trello Task]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="CSVPath" value="./src/files/input.csv"/>
+  <parameter name="Browser" value="chrome"/>
+  <test thread-count="5" name="Trello Task - TestCreate(failed)" verbose="0">
+    <classes>
+      <class name="trello.TrelloTask">
+        <methods>
+          <include name="trelloTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- trello.TrelloTask -->
+    </classes>
+  </test> <!-- Trello Task - TestCreate(failed) -->
+</suite> <!-- Failed suite [Trello Task] -->

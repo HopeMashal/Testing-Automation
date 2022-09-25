@@ -1,5 +1,7 @@
 package trello.Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,13 +11,16 @@ public class HomePage {
   WebElement createBtn;
   WebElement boardTitle;
   WebElement createBoardBtn;
+  WebElement userBtn;
+  WebElement logoutBtn;
 
   public HomePage(WebDriver driver) {
     this.driver = driver;
-    createBtn = driver.findElements(By.xpath("//*[@id='content']//ul/li/div")).get(2);
   }
 
   public void ClickCreateBoard(){
+   List<WebElement> Btns = driver.findElements(By.xpath("//*[@id='content']//ul/li/div"));
+    createBtn = Btns.get(Btns.size()-1);
     createBtn.click();
   }
 
@@ -25,4 +30,5 @@ public class HomePage {
     boardTitle.sendKeys(boardName);
     createBoardBtn.click();
   }
+
 }

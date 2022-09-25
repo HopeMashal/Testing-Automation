@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-24T15:41:10 IDT" name="Trello Task" finished-at="2022-09-24T15:41:42 IDT" duration-ms="31816">
+    <groups>
+    </groups>
+    <test started-at="2022-09-24T15:41:10 IDT" name="Trello Task - TestCreate" finished-at="2022-09-24T15:41:42 IDT" duration-ms="31816">
+      <class name="trello.TrelloTask">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:trello.TrelloTask@21de60b4]" started-at="2022-09-24T15:41:05 IDT" name="beforeSuite" finished-at="2022-09-24T15:41:10 IDT" duration-ms="4986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[./src/files/input.csv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="trelloTest()[pri:0, instance:trello.TrelloTask@21de60b4]" started-at="2022-09-24T15:41:10 IDT" name="trelloTest" finished-at="2022-09-24T15:41:42 IDT" duration-ms="31792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trelloTest -->
+      </class> <!-- trello.TrelloTask -->
+    </test> <!-- Trello Task - TestCreate -->
+  </suite> <!-- Trello Task -->
+</testng-results>
