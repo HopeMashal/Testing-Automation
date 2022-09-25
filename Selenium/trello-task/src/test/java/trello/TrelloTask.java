@@ -1,5 +1,7 @@
 package trello;
 
+//import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.AfterSuite;
@@ -27,6 +29,7 @@ public class TrelloTask {
     TrelloTask.CSVPath = CSVPath;
     driver = OpenBrowser.openBrowser(TrelloTask.Browser);
     driver.manage().window().maximize();
+    //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
     firstWindow = driver.getWindowHandle();
     driver.get(URL+"/login");
     LoginEmail loginEmail = new LoginEmail(driver);
