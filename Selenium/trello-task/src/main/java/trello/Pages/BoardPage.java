@@ -130,4 +130,9 @@ public class BoardPage {
     closeBtn.click();
   }
 
+  public int CardNumber(){
+    Cards = driver.findElements(By.xpath("//*[@id='board']/div[1]/div/div[2]/a/div[3]/span"));
+    return Cards.size();
+  }
+
 }

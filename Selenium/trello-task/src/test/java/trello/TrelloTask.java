@@ -4,6 +4,7 @@ package trello;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -59,7 +60,7 @@ public class TrelloTask {
     boardPage.EditDescription(Card1Description);
     Thread.sleep(2000);
     boardPage.AttachFile(CSVPath);
-    Thread.sleep(4000);
+    Thread.sleep(6000);
     boardPage.DownloadFile();
     Thread.sleep(2000);
     boardPage.CheckFiles(CSVPath);
@@ -83,7 +84,18 @@ public class TrelloTask {
     Thread.sleep(2000);
     boardPage.CheckCard(Card1Name);
     Thread.sleep(2000);
+    int cardsNumber1 = boardPage.CardNumber();
+    Thread.sleep(2000);
     boardPage.DeleteCard();
+    Thread.sleep(2000);
+    int cardsNumber2 = boardPage.CardNumber();
+    Thread.sleep(2000);
+    Assert.assertEquals(cardsNumber2, cardsNumber1-1, "Cards Number NOT Match");
+    driver.switchTo().window(secondWindow);
+    Thread.sleep(2000);
+    int cardsNumber3 = boardPage.CardNumber();
+    Thread.sleep(2000);
+    Assert.assertEquals(cardsNumber3, cardsNumber2, "Cards Number NOT Match");
     Thread.sleep(2000);
   }
 
