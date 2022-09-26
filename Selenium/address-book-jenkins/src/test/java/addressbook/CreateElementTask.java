@@ -19,17 +19,15 @@ import addressbook.Pages.NewAddress;
 import addressbook.Pages.SignIn;
 
 public class CreateElementTask {
-  static String Browser;
   static String CSVPath;
   static WebDriver driver;
   static String URL = "http://a.testaddressbook.com";
   
-  @Parameters({"Browser","CSVPath"})
+  @Parameters({"CSVPath"})
   @BeforeTest
-  public void beforeSuite(String Browser,String CSVPath){
-    CreateElementTask.Browser = Browser;
+  public void beforeSuite(String CSVPath){
     CreateElementTask.CSVPath = CSVPath;
-    driver = OpenBrowser.openBrowser(CreateElementTask.Browser);
+    driver = OpenBrowser.openChromeWithOptions();
     driver.manage().window().maximize();
     driver.get(URL+"/sign_in");
     SignIn signIn = new SignIn(driver);

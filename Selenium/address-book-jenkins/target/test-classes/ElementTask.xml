@@ -1,6 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Check Element Task">
-  <parameter name="Browser" value="chrome"/>
   <parameter name="CSVPath" value="./src/files/input.csv"/>
   <test name="Testing Element - Create">
     <classes>

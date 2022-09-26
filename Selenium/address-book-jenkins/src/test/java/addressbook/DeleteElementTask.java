@@ -17,15 +17,12 @@ import addressbook.Pages.HomePage;
 import addressbook.Pages.SignIn;
 
 public class DeleteElementTask {
-  static String Browser;
   static WebDriver driver;
   static String URL = "http://a.testaddressbook.com";
   
-  @Parameters({"Browser"})
   @BeforeTest
-  public void beforeSuite(String Browser){
-    ViewElementTask.Browser = Browser;
-    driver = OpenBrowser.openBrowser(ViewElementTask.Browser);
+  public void beforeSuite(){
+    driver = OpenBrowser.openChromeWithOptions();
     driver.manage().window().maximize();
     driver.get(URL+"/sign_in");
     SignIn signIn = new SignIn(driver);
