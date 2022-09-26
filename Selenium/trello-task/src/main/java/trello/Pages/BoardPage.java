@@ -104,9 +104,9 @@ public class BoardPage {
     closeBtn.click();
   }
 
-  public void CheckFiles(String CSVPath) throws Exception{
+  public void CheckFiles(String CSVPath, String CSVDownloadPath) throws Exception{
     List<String[]> CSVFileLines = CSVFile.readAllLines(CSVPath);
-    List<String[]> downloadLines = CSVFile.readAllLines("./downloads/input.csv");
+    List<String[]> downloadLines = CSVFile.readAllLines(CSVDownloadPath);
     String[] strList;
     for(int i=0; i<CSVFileLines.size(); i++){
       strList = CSVFileLines.get(i);

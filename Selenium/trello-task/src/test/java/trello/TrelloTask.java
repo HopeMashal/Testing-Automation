@@ -28,6 +28,7 @@ public class TrelloTask {
   String Card1Name = "Testing";
   String Card1Description = "Testing Description";
   String Card2Name = "Testing :)";
+  String CSVDownloadPath;
   
   @Parameters({"CSVPath"})
   @BeforeSuite
@@ -56,7 +57,7 @@ public class TrelloTask {
   @Test
   public void trelloTest() throws Exception{
     HomePage homePage = new HomePage(driver);
-    Thread.sleep(4000);
+    Thread.sleep(8000);
     homePage.ClickCreateBoard();
     Thread.sleep(2000);
     homePage.CreateBoard(BoardName);
@@ -81,7 +82,9 @@ public class TrelloTask {
     if(TrelloTask.Browser.equals("firefox") || TrelloTask.Browser.equals("chrome")){
       boardPage.DownloadFile();
       Thread.sleep(2000);
-      boardPage.CheckFiles(CSVPath);
+      if(TrelloTask.Browser.equals("chrome")) CSVDownloadPath = "./downloads/input.csv";
+      else CSVDownloadPath = "./downloads/input(1).csv";
+      boardPage.CheckFiles(CSVPath, CSVDownloadPath);
     } else {
       boardPage.CloseEditCard();
     }
@@ -119,6 +122,8 @@ public class TrelloTask {
     Assert.assertEquals(cardsNumber3, cardsNumber2, "Cards Number NOT Match");
     Thread.sleep(2000);
     boardPage.DeleteBoard();
+    Thread.sleep(2000);
+    takeSc.takeScreenShot("downloads/"+TrelloTask.Browser+"AfterDeleteBoard.jpg");
     Thread.sleep(2000);
   }
 
