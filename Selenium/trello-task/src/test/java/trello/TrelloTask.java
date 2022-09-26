@@ -21,6 +21,10 @@ public class TrelloTask {
   static WebDriver driver;
   static String URL = "https://trello.com";
   String firstWindow, secondWindow;
+  String BoardName = "HopeTest";
+  String Card1Name = "Testing";
+  String Card1Description = "Testing Description";
+  String Card2Name = "Testing :)";
   
   @Parameters({"Browser","CSVPath"})
   @BeforeSuite
@@ -46,13 +50,13 @@ public class TrelloTask {
     Thread.sleep(2000);
     homePage.ClickCreateBoard();
     Thread.sleep(2000);
-    homePage.CreateBoard("HopeTest");
+    homePage.CreateBoard(BoardName);
     Thread.sleep(2000);
     BoardPage boardPage = new BoardPage(driver);
     Thread.sleep(2000);
-    boardPage.CreateCard("Testing");
+    boardPage.CreateCard(Card1Name);
     Thread.sleep(2000);
-    boardPage.EditDescription("Testing Description");
+    boardPage.EditDescription(Card1Description);
     Thread.sleep(2000);
     boardPage.AttachFile(CSVPath);
     Thread.sleep(4000);
@@ -67,15 +71,17 @@ public class TrelloTask {
     secondWindow = driver.getWindowHandle();
     driver.switchTo().window(firstWindow);
     Thread.sleep(2000);
-    boardPage.CreateNewCard("Testing :)");
+    boardPage.CreateNewCard(Card2Name);
     Thread.sleep(2000);
     driver.switchTo().window(secondWindow);
+    Thread.sleep(2000);
+    boardPage.CheckCard(Card2Name);
   }
 
-  /* @AfterSuite
+  @AfterSuite
   public void afterSuite() throws InterruptedException {
     Thread.sleep(2000);
     driver.quit();
-  } */
+  }
 
 }

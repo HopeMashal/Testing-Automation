@@ -22,14 +22,14 @@ public class BoardPage {
   WebElement computerBtn;
   WebElement downloadFile;
   WebElement closeBtn;
+  List<WebElement> Cards;
+  WebElement LastCard;
 
   public BoardPage(WebDriver driver) {
     this.driver = driver;
   }
 
   public void CreateCard(String titleCard){
-    // createCard = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[3]/a"));
-    // createCard.click();
     createBox = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/div/div[1]/div/textarea"));
     createBox.sendKeys(titleCard);
     addBtn = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/div/div[2]/div[1]/input"));
@@ -81,6 +81,12 @@ public class BoardPage {
         Assert.assertEquals(CSVFileLines.get(i)[j], downloadLines.get(i)[j], "Two files NOT Match !!!");
       }
     }
+  }
+
+  public void CheckCard(String CardName){
+    Cards = driver.findElements(By.xpath("//*[@id='board']/div[1]/div/div[2]/a/div[3]/span"));
+    LastCard = Cards.get(Cards.size()-1);
+    Assert.assertEquals(LastCard.getText(), CardName, "Card Name NOT Match");
   }
 
 }
