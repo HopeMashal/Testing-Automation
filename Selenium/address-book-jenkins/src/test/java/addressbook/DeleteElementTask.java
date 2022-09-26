@@ -20,7 +20,7 @@ public class DeleteElementTask {
   static String URL = "http://a.testaddressbook.com";
   
   @BeforeTest
-  public void beforeSuite(){
+  public void beforeTest(){
     driver = OpenBrowser.openChromeWithOptions();
     driver.manage().window().maximize();
     driver.get(URL+"/sign_in");
@@ -66,7 +66,7 @@ public class DeleteElementTask {
   }
     
   @AfterTest
-  public void afterSuite() {
+  public void afterTest() {
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
     driver.quit();

@@ -24,7 +24,7 @@ public class EditElementTask {
   static String[] updateData = new String[]{"Amal", "Akira", "Jerusalem", "Jerusalem", "Jerusalem", "DC", "12222", "canada", "12/11/1997", "#e40486", "25", "https://www.google.com/", "052-433-4233", "3 1", "Be Happy :)"};
   
   @BeforeTest
-  public void beforeSuite(){
+  public void beforeTest(){
     driver = OpenBrowser.openChromeWithOptions();
     driver.manage().window().maximize();
     driver.get(URL+"/sign_in");
@@ -90,7 +90,7 @@ public class EditElementTask {
   }
     
   @AfterTest
-  public void afterSuite() {
+  public void afterTest() {
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
     driver.quit();

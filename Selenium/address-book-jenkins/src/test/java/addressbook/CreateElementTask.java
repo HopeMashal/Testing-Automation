@@ -25,7 +25,7 @@ public class CreateElementTask {
   
   @Parameters({"CSVPath"})
   @BeforeTest
-  public void beforeSuite(String CSVPath){
+  public void beforeTest(String CSVPath){
     CreateElementTask.CSVPath = CSVPath;
     driver = OpenBrowser.openChromeWithOptions();
     driver.manage().window().maximize();
@@ -70,7 +70,7 @@ public class CreateElementTask {
   }
     
   @AfterTest
-  public void afterSuite() {
+  public void afterTest() {
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
     driver.quit();
