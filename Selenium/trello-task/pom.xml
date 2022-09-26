@@ -97,6 +97,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M4</version>
         <configuration>
+          <forkCount>1</forkCount>
           <suiteXmlFiles>
             <suiteXmlFile>src/test/resources/Trello.xml</suiteXmlFile>
           </suiteXmlFiles>

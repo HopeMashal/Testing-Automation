@@ -9,10 +9,55 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Trello Task</th></tr>
-<tr><td><a href="#t0">Trello Task - TestCreate</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">98,748</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Trello Task - Chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">111,348</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Trello Task - Edge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">105,693</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Trello Task - FireFox</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">955</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">217,996</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Trello Task</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Trello Task - TestCreate &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">trello.TrelloTask</td><td><a href="#m0">trelloTest</a></td><td rowspan="1">1664194704297</td><td rowspan="1">98689</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Trello Task</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Trello Task - Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">trello.TrelloTask</td><td><a href="#m0">trelloTest</a></td><td rowspan="1">1664196842116</td><td rowspan="1">97361</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Trello Task - Edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">trello.TrelloTask</td><td><a href="#m1">trelloTest</a></td><td rowspan="1">1664196951514</td><td rowspan="1">93629</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Trello Task - FireFox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">trello.TrelloTask</td><td><a href="#m2">beforeTest</a></td><td rowspan="1">1664197047722</td><td rowspan="1">934</td></tr><tr><th colspan="4">Trello Task - FireFox &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">trello.TrelloTask</td><td><a href="#m3">afterTest</a></td><td rowspan="1">1664197048676</td><td rowspan="1">0</td></tr><tr><th colspan="4">Trello Task - FireFox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">trello.TrelloTask</td><td><a href="#m4">trelloTest</a></td><td rowspan="1">1664197048675</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Trello Task - TestCreate</h2><h3 id="m0">trello.TrelloTask#trelloTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Trello Task - Chrome</h2><h3 id="m0">trello.TrelloTask#trelloTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Trello Task - Edge</h2><h3 id="m1">trello.TrelloTask#trelloTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Trello Task - FireFox</h2><h3 id="m2">trello.TrelloTask#beforeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-D3N9BFH&apos;, ip: &apos;192.168.50.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {profile: UEsDBBQACAgIAC1/OlUAAAAAAAA...}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {profile: UEsDBBQACAgIAC1/OlUAAAAAAAA...}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at trello.Core.OpenBrowser.openFireFoxWithOptions(OpenBrowser.java:84)
+	at trello.TrelloTask.beforeTest(TrelloTask.java:43)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">trello.TrelloTask#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">trello.TrelloTask#trelloTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-D3N9BFH&apos;, ip: &apos;192.168.50.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {profile: UEsDBBQACAgIAC1/OlUAAAAAAAA...}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {profile: UEsDBBQACAgIAC1/OlUAAAAAAAA...}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at trello.Core.OpenBrowser.openFireFoxWithOptions(OpenBrowser.java:84)
+	at trello.TrelloTask.beforeTest(TrelloTask.java:43)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -153,4 +153,9 @@ public class BoardPage {
     closeBBtn.click();
   }
 
+  public void CloseEditCard(){
+    closeBtn = driver.findElement(By.xpath("//*[@id='chrome-container']/div[3]/div/div/a"));
+    closeBtn.click();
+  }
+
 }

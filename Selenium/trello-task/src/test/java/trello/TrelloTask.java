@@ -5,8 +5,9 @@ package trello;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -28,20 +29,26 @@ public class TrelloTask {
   String Card1Description = "Testing Description";
   String Card2Name = "Testing :)";
   
-  @Parameters({"Browser","CSVPath"})
+  @Parameters({"CSVPath"})
   @BeforeSuite
-  public void beforeSuite(String Browser,String CSVPath) throws InterruptedException{
-    TrelloTask.Browser = Browser;
+  public void beforeSuite(String CSVPath){
     TrelloTask.CSVPath = CSVPath;
-    //driver = OpenBrowser.openBrowser(TrelloTask.Browser);
-    driver = OpenBrowser.openChromeWithOptions();
+  }
+
+  @Parameters({"Browser"})
+  @BeforeTest
+  public void beforeTest(String Browser) throws InterruptedException{
+    TrelloTask.Browser = Browser;
+    if(TrelloTask.Browser.equals("chrome")) driver = OpenBrowser.openChromeWithOptions();
+    else if(TrelloTask.Browser.equals("firefox")) driver = OpenBrowser.openFireFoxWithOptions();
+    else driver = OpenBrowser.openBrowser(TrelloTask.Browser);
     driver.manage().window().maximize();
     //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
     firstWindow = driver.getWindowHandle();
     driver.get(URL+"/login");
     LoginEmail loginEmail = new LoginEmail(driver);
     loginEmail.Continue("mashal.hope@gmail.com");
-    Thread.sleep(2000);
+    Thread.sleep(4000);
     LoginPassword loginPassword = new LoginPassword(driver);
     loginPassword.Login("**");
   }
@@ -71,9 +78,13 @@ public class TrelloTask {
     Thread.sleep(6000);
     takeSc.takeScreenShot("downloads/"+TrelloTask.Browser+"AfterAttachFile.jpg");
     Thread.sleep(2000);
-    boardPage.DownloadFile();
-    Thread.sleep(2000);
-    boardPage.CheckFiles(CSVPath);
+    if(TrelloTask.Browser.equals("firefox") || TrelloTask.Browser.equals("chrome")){
+      boardPage.DownloadFile();
+      Thread.sleep(2000);
+      boardPage.CheckFiles(CSVPath);
+    } else {
+      boardPage.CloseEditCard();
+    }
     Thread.sleep(2000);
     String URL = driver.getCurrentUrl();
     driver.switchTo().newWindow(WindowType.TAB);
@@ -111,8 +122,8 @@ public class TrelloTask {
     Thread.sleep(2000);
   }
 
-  @AfterSuite
-  public void afterSuite() throws InterruptedException {
+  @AfterTest
+  public void afterTest() throws InterruptedException {
     Thread.sleep(2000);
     driver.quit();
   }

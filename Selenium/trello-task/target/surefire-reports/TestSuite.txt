@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 110.815 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 219.204 s <<< FAILURE! - in TestSuite
+trello.TrelloTask.beforeTest  Time elapsed: 97.159 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-D3N9BFH', ip: '192.168.50.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {profile: UEsDBBQACAgIAC1/OlUAAAAAAAA...}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {profile: UEsDBBQACAgIAC1/OlUAAAAAAAA...}}}]
+	at trello.TrelloTask.beforeTest(TrelloTask.java:43)
+
