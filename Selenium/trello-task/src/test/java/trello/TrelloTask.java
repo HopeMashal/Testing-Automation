@@ -27,7 +27,8 @@ public class TrelloTask {
   public void beforeSuite(String Browser,String CSVPath) throws InterruptedException{
     TrelloTask.Browser = Browser;
     TrelloTask.CSVPath = CSVPath;
-    driver = OpenBrowser.openBrowser(TrelloTask.Browser);
+    //driver = OpenBrowser.openBrowser(TrelloTask.Browser);
+    driver = OpenBrowser.openChromeWithOptions();
     driver.manage().window().maximize();
     //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
     firstWindow = driver.getWindowHandle();
@@ -65,7 +66,10 @@ public class TrelloTask {
     Thread.sleep(2000);
     secondWindow = driver.getWindowHandle();
     driver.switchTo().window(firstWindow);
-
+    Thread.sleep(2000);
+    boardPage.CreateNewCard("Testing :)");
+    Thread.sleep(2000);
+    driver.switchTo().window(secondWindow);
   }
 
   /* @AfterSuite

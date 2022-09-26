@@ -36,6 +36,15 @@ public class BoardPage {
     addBtn.click();
   }
 
+  public void CreateNewCard(String titleCard){
+    createCard = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[3]/a"));
+    createCard.click();
+    createBox = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/div/div[1]/div/textarea"));
+    createBox.sendKeys(titleCard);
+    addBtn = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/div/div[2]/div[1]/input"));
+    addBtn.click();
+  }
+
   public void EditDescription(String description) throws InterruptedException{
     cardElement = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/a/div[3]"));
     cardElement.click();
@@ -64,7 +73,7 @@ public class BoardPage {
 
   public void CheckFiles(String CSVPath) throws Exception{
     List<String[]> CSVFileLines = CSVFile.readAllLines(CSVPath);
-    List<String[]> downloadLines = CSVFile.readAllLines("C:\\Users\\LENOVO\\Downloads\\input.csv");
+    List<String[]> downloadLines = CSVFile.readAllLines("./downloads/input.csv");
     String[] strList;
     for(int i=0; i<CSVFileLines.size(); i++){
       strList = CSVFileLines.get(i);
