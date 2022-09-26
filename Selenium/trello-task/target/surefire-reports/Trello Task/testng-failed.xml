@@ -9,6 +9,7 @@
         <methods>
           <include name="trelloTest"/>
           <include name="beforeSuite"/>
+          <include name="afterSuite"/>
         </methods>
       </class> <!-- trello.TrelloTask -->
     </classes>

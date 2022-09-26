@@ -47,7 +47,7 @@ public class TrelloTask {
   @Test
   public void trelloTest() throws Exception{
     HomePage homePage = new HomePage(driver);
-    Thread.sleep(2000);
+    Thread.sleep(4000);
     homePage.ClickCreateBoard();
     Thread.sleep(2000);
     homePage.CreateBoard(BoardName);
@@ -76,6 +76,15 @@ public class TrelloTask {
     driver.switchTo().window(secondWindow);
     Thread.sleep(2000);
     boardPage.CheckCard(Card2Name);
+    Thread.sleep(2000);
+    boardPage.CreateCardUsingActions();
+    Thread.sleep(2000);
+    driver.switchTo().window(firstWindow);
+    Thread.sleep(2000);
+    boardPage.CheckCard(Card1Name);
+    Thread.sleep(2000);
+    boardPage.DeleteCard();
+    Thread.sleep(2000);
   }
 
   @AfterSuite

@@ -4,8 +4,10 @@ import java.io.File;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import trello.Core.CSVFile;
@@ -24,6 +26,8 @@ public class BoardPage {
   WebElement closeBtn;
   List<WebElement> Cards;
   WebElement LastCard;
+  WebElement titleBox;
+  WebElement archiveBtn;
 
   public BoardPage(WebDriver driver) {
     this.driver = driver;
@@ -43,6 +47,31 @@ public class BoardPage {
     createBox.sendKeys(titleCard);
     addBtn = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/div/div[2]/div[1]/input"));
     addBtn.click();
+  }
+
+  public void CreateCardUsingActions() throws InterruptedException{
+    cardElement = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/a[1]/div[3]"));
+    cardElement.click();
+    Actions actions = new Actions(driver);
+    Thread.sleep(4000);
+    titleBox = driver.findElement(By.xpath("//*[@id='chrome-container']/div[3]/div/div/div/div[3]/div[1]/textarea"));
+    actions.doubleClick(titleBox).perform();
+    actions.keyDown(Keys.CONTROL);
+		actions.sendKeys("c");
+		actions.keyUp(Keys.CONTROL);
+    actions.build().perform();
+    closeBtn = driver.findElement(By.xpath("//*[@id='chrome-container']/div[3]/div/div/a"));
+    closeBtn.click();
+    Thread.sleep(2000);
+    createCard = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[3]/a"));
+    createCard.click();
+    createBox = driver.findElement(By.xpath("//*[@id='board']/div[1]/div/div[2]/div/div[1]/div/textarea"));
+    createBox.click();
+    actions.keyDown(Keys.CONTROL);
+		actions.sendKeys("v");
+		actions.keyUp(Keys.CONTROL);
+    actions.build().perform();
+    createBox.sendKeys(Keys.ENTER);
   }
 
   public void EditDescription(String description) throws InterruptedException{
@@ -87,6 +116,18 @@ public class BoardPage {
     Cards = driver.findElements(By.xpath("//*[@id='board']/div[1]/div/div[2]/a/div[3]/span"));
     LastCard = Cards.get(Cards.size()-1);
     Assert.assertEquals(LastCard.getText(), CardName, "Card Name NOT Match");
+  }
+
+  public void DeleteCard() throws InterruptedException{
+    Cards = driver.findElements(By.xpath("//*[@id='board']/div[1]/div/div[2]/a/div[3]/span"));
+    LastCard = Cards.get(Cards.size()-1);
+    LastCard.click();
+    Thread.sleep(2000);
+    archiveBtn = driver.findElement(By.xpath("//*[@id='chrome-container']/div[3]/div/div/div/div[5]/div[5]/div/a[5]"));
+    archiveBtn.click();
+    Thread.sleep(2000);
+    closeBtn = driver.findElement(By.xpath("//*[@id='chrome-container']/div[3]/div/div/a"));
+    closeBtn.click();
   }
 
 }
