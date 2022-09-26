@@ -28,6 +28,10 @@ public class BoardPage {
   WebElement LastCard;
   WebElement titleBox;
   WebElement archiveBtn;
+  WebElement showMenuBtn;
+  WebElement MoreBtn;
+  WebElement closeBoardBtn;
+  WebElement closeBBtn;
 
   public BoardPage(WebDriver driver) {
     this.driver = driver;
@@ -133,6 +137,20 @@ public class BoardPage {
   public int CardNumber(){
     Cards = driver.findElements(By.xpath("//*[@id='board']/div[1]/div/div[2]/a/div[3]/span"));
     return Cards.size();
+  }
+
+  public void DeleteBoard() throws InterruptedException{
+    showMenuBtn = driver.findElement(By.xpath("//*[@id='content']/div/div[1]/div[1]/div[5]/span[9]/div/button"));
+    showMenuBtn.click();
+    Thread.sleep(2000);
+    MoreBtn = driver.findElement(By.xpath("//*[@id='content']/div/div[2]/div/div/div[2]/div/ul[1]/li[5]/a"));
+    MoreBtn.click();
+    Thread.sleep(2000);
+    closeBoardBtn = driver.findElement(By.xpath("//*[@id='content']/div/div[2]/div/div/div[2]/div/ul[3]/li/a"));
+    closeBoardBtn.click();
+    Thread.sleep(2000);
+    closeBBtn = driver.findElement(By.xpath("//*[@id='chrome-container']/div[4]/div/div[2]/div/div/div/input"));
+    closeBBtn.click();
   }
 
 }

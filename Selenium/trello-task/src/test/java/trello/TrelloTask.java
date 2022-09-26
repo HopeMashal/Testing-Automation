@@ -97,6 +97,8 @@ public class TrelloTask {
     Thread.sleep(2000);
     Assert.assertEquals(cardsNumber3, cardsNumber2, "Cards Number NOT Match");
     Thread.sleep(2000);
+    boardPage.DeleteBoard();
+    Thread.sleep(2000);
   }
 
   @AfterSuite
