@@ -1,10 +1,14 @@
 package alluretask;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,6 +18,7 @@ import alluretask.Core.OpenBrowser;
 import alluretask.Core.TakeScreenShot;
 import alluretask.Pages.HomePage;
 import alluretask.Pages.SignIn;
+import io.qameta.allure.Allure;
 
 public class AllureTask {
   static WebDriver driver;
@@ -42,6 +47,8 @@ public class AllureTask {
     Thread.sleep(5000);
     TakeScreenShot takeSc = new TakeScreenShot(driver);
 		takeSc.takeScreenShot("AfterSignIn.jpg");
+    File screenshotAs = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    Allure.addAttachment("Screenshot", new FileInputStream(screenshotAs));
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
     Thread.sleep(5000);
