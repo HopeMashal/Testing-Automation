@@ -4,12 +4,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import alluretask.Core.OpenBrowser;
+import alluretask.Core.TakeScreenShot;
 import alluretask.Pages.HomePage;
 import alluretask.Pages.SignIn;
 
@@ -27,17 +29,22 @@ public class AllureTask {
 		Email = prop.getProperty("email");
 		Password = prop.getProperty("password");
     driver = OpenBrowser.openChromeWithOptions();
+    driver.manage().window().setSize(new Dimension(1200,800));
     driver.get(URL+"/sign_in");
   }
 
   @Test
-  public void AllureTest() throws InterruptedException{
+  public void AllureTest() throws InterruptedException, IOException{
+    System.out.println(Email);
+    System.out.println(Password);
     SignIn signIn = new SignIn(driver);
     signIn.Login(Email, Password);
-    Thread.sleep(2000);
+    Thread.sleep(5000);
+    TakeScreenShot takeSc = new TakeScreenShot(driver);
+		takeSc.takeScreenShot("AfterSignIn.jpg");
     HomePage homePage = new HomePage(driver);
-    homePage.AddressClick();
-    Thread.sleep(2000);
+    homePage.Logout();;
+    Thread.sleep(5000);
   }
 
   @AfterTest
