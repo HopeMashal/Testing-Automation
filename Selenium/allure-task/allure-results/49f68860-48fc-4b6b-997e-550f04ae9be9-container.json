@@ -1,0 +1,1 @@
+{"uuid":"49f68860-48fc-4b6b-997e-550f04ae9be9","name":"Allure Task - Chrome","children":["e0737625-35d1-43e8-ac05-4aba352b91d7"],"befores":[{"name":"beforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1664614733263,"stop":1664614736256}],"afters":[],"start":1664614733239,"stop":1664614736614}
