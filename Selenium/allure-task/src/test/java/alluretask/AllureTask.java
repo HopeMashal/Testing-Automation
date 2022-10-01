@@ -35,8 +35,8 @@ public class AllureTask {
 
   @Test
   public void AllureTest() throws InterruptedException, IOException{
-    System.out.println(Email);
-    System.out.println(Password);
+    System.out.println("Email:- "+Email);
+    System.out.println("Password:- "+Password);
     SignIn signIn = new SignIn(driver);
     signIn.Login(Email, Password);
     Thread.sleep(5000);
