@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Allure Task">
+  <test name="Allure Task - Chrome">
+    <parameter name="Email" value="email"/>
+    <parameter name="Password" value="password"/>
+    <classes>
+      <class name="alluretask.AllureTask"/>
+    </classes>
+  </test>
+</suite>
