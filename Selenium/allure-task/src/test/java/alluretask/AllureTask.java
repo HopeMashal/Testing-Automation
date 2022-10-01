@@ -1,9 +1,12 @@
 package alluretask;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import alluretask.Core.OpenBrowser;
@@ -16,11 +19,13 @@ public class AllureTask {
   static String Password;
   static String URL = "http://a.testaddressbook.com";
   
-  @Parameters({"Email","Password"})
   @BeforeTest
-  public void beforeTest(String Email, String Password){
-    AllureTask.Email = Email;
-    AllureTask.Password = Password;
+  public void beforeTest() throws IOException{
+    FileReader readFile=new FileReader("file.properties");
+		Properties prop= new Properties();
+		prop.load(readFile);
+		Email = prop.getProperty("email");
+		Password = prop.getProperty("password");
     driver = OpenBrowser.openChromeWithOptions();
     driver.get(URL+"/sign_in");
   }
