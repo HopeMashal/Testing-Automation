@@ -13,7 +13,7 @@ public class TakeScreenShot {
 	public TakeScreenShot(WebDriver driver) {
 		this.driver = driver;
 	}
-	public void takeScreenShot(String filePath) throws IOException {
+	public File takeScreenShot(String filePath) throws IOException {
 		TakesScreenshot scrShot =((TakesScreenshot)this.driver);
 		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 		
@@ -25,5 +25,6 @@ public class TakeScreenShot {
 
 		FileUtils.copyFile(SrcFile, DestFile);
 
+		return DestFile;
 	}
 }

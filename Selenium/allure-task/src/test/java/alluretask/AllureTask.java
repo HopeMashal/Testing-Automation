@@ -1,14 +1,13 @@
 package alluretask;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -35,6 +34,7 @@ public class AllureTask {
 		Password = prop.getProperty("password");
     driver = OpenBrowser.openChromeWithOptions();
     driver.manage().window().setSize(new Dimension(1200,800));
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
     driver.get(URL+"/sign_in");
   }
 
@@ -42,16 +42,15 @@ public class AllureTask {
   public void AllureTest() throws InterruptedException, IOException{
     System.out.println("Email:- "+Email);
     System.out.println("Password:- "+Password);
-    SignIn signIn = new SignIn(driver);
-    signIn.Login(Email, Password);
-    Thread.sleep(5000);
     TakeScreenShot takeSc = new TakeScreenShot(driver);
-		takeSc.takeScreenShot("AfterSignIn.jpg");
-    File screenshotAs = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-    Allure.addAttachment("Screenshot", new FileInputStream(screenshotAs));
+    SignIn signIn = new SignIn(driver);
+    File SignPage = takeSc.takeScreenShot("BeforeSignIn.jpg");
+    Allure.addAttachment(SignPage.getName(), FileUtils.openInputStream(SignPage));
+    signIn.Login(Email, Password);
+		File HomePage = takeSc.takeScreenShot("AfterSignIn.jpg");
+    Allure.addAttachment(HomePage.getName(), FileUtils.openInputStream(HomePage));
     HomePage homePage = new HomePage(driver);
     homePage.Logout();
-    Thread.sleep(5000);
   }
 
   @AfterTest
