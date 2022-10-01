@@ -43,7 +43,7 @@ public class AllureTask {
     TakeScreenShot takeSc = new TakeScreenShot(driver);
 		takeSc.takeScreenShot("AfterSignIn.jpg");
     HomePage homePage = new HomePage(driver);
-    homePage.Logout();;
+    homePage.Logout();
     Thread.sleep(5000);
   }
 
