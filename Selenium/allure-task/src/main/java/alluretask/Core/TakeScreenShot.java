@@ -2,29 +2,31 @@ package alluretask.Core;
 
 import java.io.File;
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class TakeScreenShot {
-	WebDriver driver;
-	public TakeScreenShot(WebDriver driver) {
-		this.driver = driver;
-	}
-	public File takeScreenShot(String filePath) throws IOException {
-		TakesScreenshot scrShot =((TakesScreenshot)this.driver);
-		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-		
-		//Move image file to new destination
 
-		File DestFile=new File(filePath);
+  WebDriver driver;
 
-		//Copy file at destination
+  public TakeScreenShot(WebDriver driver) {
+    this.driver = driver;
+  }
 
-		FileUtils.copyFile(SrcFile, DestFile);
+  public File takeScreenShot(String filePath) throws IOException {
+    TakesScreenshot scrShot = ((TakesScreenshot) this.driver);
+    File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
 
-		return DestFile;
-	}
+    //Move image file to new destination
+
+    File DestFile = new File(filePath);
+
+    //Copy file at destination
+
+    FileUtils.copyFile(SrcFile, DestFile);
+
+    return DestFile;
+  }
 }

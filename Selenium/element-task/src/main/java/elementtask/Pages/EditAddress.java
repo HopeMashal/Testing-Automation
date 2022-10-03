@@ -6,9 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class EditAddress{
+public class EditAddress {
+
   WebDriver driver;
-	WebElement FName;
+  WebElement FName;
   WebElement LName;
   WebElement Address1;
   WebElement Address2;
@@ -41,15 +42,33 @@ public class EditAddress{
     Age = driver.findElement(By.name("address[age]"));
     Website = driver.findElement(By.name("address[website]"));
     Phone = driver.findElement(By.name("address[phone]"));
-    Common1 = driver.findElement(By.xpath("/html/body/div/form/div[15]/input[2]"));
-    Common2 = driver.findElement(By.xpath("/html/body/div/form/div[15]/input[4]"));
-    Common3 = driver.findElement(By.xpath("/html/body/div/form/div[15]/input[6]"));
+    Common1 =
+      driver.findElement(By.xpath("/html/body/div/form/div[15]/input[2]"));
+    Common2 =
+      driver.findElement(By.xpath("/html/body/div/form/div[15]/input[4]"));
+    Common3 =
+      driver.findElement(By.xpath("/html/body/div/form/div[15]/input[6]"));
     Note = driver.findElement(By.name("address[note]"));
     UpdateBtn = driver.findElement(By.name("commit"));
   }
 
-  public void FillData(String firstName, String lastName, String address1, String address2, String city, String state, String zip, String country, String birthday, String color, String age, String website, String phone,String common, String note) {
-
+  public void FillData(
+    String firstName,
+    String lastName,
+    String address1,
+    String address2,
+    String city,
+    String state,
+    String zip,
+    String country,
+    String birthday,
+    String color,
+    String age,
+    String website,
+    String phone,
+    String common,
+    String note
+  ) {
     FName.clear();
     LName.clear();
     Address1.clear();
@@ -63,9 +82,9 @@ public class EditAddress{
     Age.clear();
     Website.clear();
     Phone.clear();
-    if(Common1.isSelected()) Common1.click();
-    if(Common2.isSelected()) Common2.click();
-    if(Common3.isSelected()) Common3.click();
+    if (Common1.isSelected()) Common1.click();
+    if (Common2.isSelected()) Common2.click();
+    if (Common3.isSelected()) Common3.click();
     Note.clear();
 
     FName.sendKeys(firstName);
@@ -76,30 +95,43 @@ public class EditAddress{
     Select states = new Select(State);
     states.selectByValue(state);
     ZIP.sendKeys(zip);
-    if(country.equals("us")) Country1.click();
-    if(country.equals("canada")) Country2.click();
+    if (country.equals("us")) Country1.click();
+    if (country.equals("canada")) Country2.click();
     Birthday.sendKeys(birthday);
     Color.sendKeys(color);
     Age.sendKeys(age);
     Website.sendKeys(website);
     Phone.sendKeys(phone);
     String[] Commons = common.split(" ");
-    for(int i=0; i<Commons.length; i++){
-      if(Integer.parseInt(Commons[i]) == 1){
+    for (int i = 0; i < Commons.length; i++) {
+      if (Integer.parseInt(Commons[i]) == 1) {
         Common1.click();
-      } else if(Integer.parseInt(Commons[i]) == 2){
+      } else if (Integer.parseInt(Commons[i]) == 2) {
         Common2.click();
-      } else if(Integer.parseInt(Commons[i]) == 3){
+      } else if (Integer.parseInt(Commons[i]) == 3) {
         Common3.click();
       }
     }
     Note.sendKeys(note);
     UpdateBtn.click();
   }
-  
-  public void CheckAddressData(String firstName,String lastName, String city, String state){
-    Assert.assertEquals(FName.getAttribute("value"), firstName, "First name NOT Match !!");
-    Assert.assertEquals(LName.getAttribute("value"), lastName, "Last name NOT Match !!");
+
+  public void CheckAddressData(
+    String firstName,
+    String lastName,
+    String city,
+    String state
+  ) {
+    Assert.assertEquals(
+      FName.getAttribute("value"),
+      firstName,
+      "First name NOT Match !!"
+    );
+    Assert.assertEquals(
+      LName.getAttribute("value"),
+      lastName,
+      "Last name NOT Match !!"
+    );
     Assert.assertEquals(City.getAttribute("value"), city, "City NOT Match !!");
     //Assert.assertEquals(State.getAttribute("value"), state, "State NOT Match !!");
   }

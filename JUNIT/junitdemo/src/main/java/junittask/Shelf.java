@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Shelf {
-  List<String> Books ;
+
+  List<String> Books;
 
   public Shelf() {
     Books = new ArrayList<String>();
   }
 
-  public void addBook(String book){
+  public void addBook(String book) {
     Books.add(book);
   }
 
-  public void removeBook(String book){
+  public void removeBook(String book) {
     try {
       Books.remove(book);
     } catch (Exception e) {
@@ -23,11 +24,11 @@ public class Shelf {
     }
   }
 
-  public void deleteBooks(){
+  public void deleteBooks() {
     Books.removeAll(Books);
   }
 
-  public List<String> getBooks(){
+  public List<String> getBooks() {
     return Books;
   }
 }

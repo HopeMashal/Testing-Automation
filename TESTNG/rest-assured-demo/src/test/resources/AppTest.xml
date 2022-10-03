@@ -1,8 +1,8 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Rest Assured Task">
   <test name="Rest Assured Task - Test">
     <classes>
-      <class name="restassured.FactoryClass"/>
+      <class name="restassured.FactoryClass" />
     </classes>
   </test>
 </suite>

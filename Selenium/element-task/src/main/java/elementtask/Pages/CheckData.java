@@ -7,8 +7,9 @@ import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 
 public class CheckData {
+
   WebDriver driver;
-	WebElement FName;
+  WebElement FName;
   WebElement LName;
   WebElement Address1;
   WebElement Address2;
@@ -49,7 +50,23 @@ public class CheckData {
     ListBtn = driver.findElement(By.linkText("List"));
   }
 
-  public void CheckAddressData(String firstName,String lastName, String address1, String address2, String city, String state, String zip, String country, String birthday, String color, String age, String website, String phone, String common, String note){
+  public void CheckAddressData(
+    String firstName,
+    String lastName,
+    String address1,
+    String address2,
+    String city,
+    String state,
+    String zip,
+    String country,
+    String birthday,
+    String color,
+    String age,
+    String website,
+    String phone,
+    String common,
+    String note
+  ) {
     Assert.assertEquals(FName.getText(), firstName, "First name NOT Match !!");
     Assert.assertEquals(LName.getText(), lastName, "Last name NOT Match !!");
     Assert.assertEquals(Address1.getText(), address1, "Address 1 NOT Match !!");
@@ -66,30 +83,47 @@ public class CheckData {
     Assert.assertEquals(Website.getText(), website, "Website NOT Match !!");
     Assert.assertEquals(Phone.getText(), phone, "Phone NOT Match !!");
     String[] Commons = common.split(" ");
-    for(int i=0; i<Commons.length; i++){
-      if(Integer.parseInt(Commons[i]) == 1){
-        Assert.assertEquals(Common1.getText().toUpperCase(), "YES", "Common Interests 1 NOT Match !!");
-      } else if(Integer.parseInt(Commons[i]) == 2){
-        Assert.assertEquals(Common2.getText().toUpperCase(), "YES", "Common Interests 2 NOT Match !!");
-      } else if(Integer.parseInt(Commons[i]) == 3){
-        Assert.assertEquals(Common3.getText().toUpperCase(), "YES", "Common Interests 3 NOT Match !!");
+    for (int i = 0; i < Commons.length; i++) {
+      if (Integer.parseInt(Commons[i]) == 1) {
+        Assert.assertEquals(
+          Common1.getText().toUpperCase(),
+          "YES",
+          "Common Interests 1 NOT Match !!"
+        );
+      } else if (Integer.parseInt(Commons[i]) == 2) {
+        Assert.assertEquals(
+          Common2.getText().toUpperCase(),
+          "YES",
+          "Common Interests 2 NOT Match !!"
+        );
+      } else if (Integer.parseInt(Commons[i]) == 3) {
+        Assert.assertEquals(
+          Common3.getText().toUpperCase(),
+          "YES",
+          "Common Interests 3 NOT Match !!"
+        );
       }
     }
     Assert.assertEquals(Note.getText(), note, "Note NOT Match !!");
   }
 
-  public void CheckAddressData(String firstName,String lastName, String city, String state){
+  public void CheckAddressData(
+    String firstName,
+    String lastName,
+    String city,
+    String state
+  ) {
     Assert.assertEquals(FName.getText(), firstName, "First name NOT Match !!");
     Assert.assertEquals(LName.getText(), lastName, "Last name NOT Match !!");
     Assert.assertEquals(City.getText(), city, "City NOT Match !!");
     Assert.assertEquals(State.getText(), state, "State NOT Match !!");
   }
 
-  public void ListClick(){
+  public void ListClick() {
     ListBtn.click();
   }
 
-  public void EditClick(){
+  public void EditClick() {
     EditBtn.click();
   }
 }

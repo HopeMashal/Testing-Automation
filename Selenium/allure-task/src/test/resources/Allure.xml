@@ -1,8 +1,8 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Allure Task">
-  <test name="Allure Task - Chrome">
-    <classes>
-      <class name="alluretask.AllureTask"/>
-    </classes>
-  </test>
+	<test name="Allure Task - Chrome">
+		<classes>
+			<class name="alluretask.AllureTask" />
+		</classes>
+	</test>
 </suite>

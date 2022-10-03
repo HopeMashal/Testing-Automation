@@ -6,8 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class NewAddress {
+
   WebDriver driver;
-	WebElement FName;
+  WebElement FName;
   WebElement LName;
   WebElement Address1;
   WebElement Address2;
@@ -40,14 +41,39 @@ public class NewAddress {
     Age = driver.findElement(By.name("address[age]"));
     Website = driver.findElement(By.name("address[website]"));
     Phone = driver.findElement(By.name("address[phone]"));
-    Common1 = driver.findElement(By.xpath("/html/body/div/div/div/form/div[15]/input[2]"));
-    Common2 = driver.findElement(By.xpath("/html/body/div/div/div/form/div[15]/input[4]"));
-    Common3 = driver.findElement(By.xpath("/html/body/div/div/div/form/div[15]/input[6]"));
+    Common1 =
+      driver.findElement(
+        By.xpath("/html/body/div/div/div/form/div[15]/input[2]")
+      );
+    Common2 =
+      driver.findElement(
+        By.xpath("/html/body/div/div/div/form/div[15]/input[4]")
+      );
+    Common3 =
+      driver.findElement(
+        By.xpath("/html/body/div/div/div/form/div[15]/input[6]")
+      );
     Note = driver.findElement(By.name("address[note]"));
     CreateBtn = driver.findElement(By.name("commit"));
   }
 
-  public void FillData(String firstName,String lastName, String address1, String address2, String city, String state, String zip, String country, String birthday, String color, String age, String website, String phone, String common, String note){
+  public void FillData(
+    String firstName,
+    String lastName,
+    String address1,
+    String address2,
+    String city,
+    String state,
+    String zip,
+    String country,
+    String birthday,
+    String color,
+    String age,
+    String website,
+    String phone,
+    String common,
+    String note
+  ) {
     FName.sendKeys(firstName);
     LName.sendKeys(lastName);
     Address1.sendKeys(address1);
@@ -56,20 +82,20 @@ public class NewAddress {
     Select states = new Select(State);
     states.selectByValue(state);
     ZIP.sendKeys(zip);
-    if(country.equals("us")) Country1.click();
-    if(country.equals("canada")) Country2.click();
+    if (country.equals("us")) Country1.click();
+    if (country.equals("canada")) Country2.click();
     Birthday.sendKeys(birthday);
     Color.sendKeys(color);
     Age.sendKeys(age);
     Website.sendKeys(website);
     Phone.sendKeys(phone);
     String[] Commons = common.split(" ");
-    for(int i=0; i<Commons.length; i++){
-      if(Integer.parseInt(Commons[i]) == 1){
+    for (int i = 0; i < Commons.length; i++) {
+      if (Integer.parseInt(Commons[i]) == 1) {
         Common1.click();
-      } else if(Integer.parseInt(Commons[i]) == 2){
+      } else if (Integer.parseInt(Commons[i]) == 2) {
         Common2.click();
-      } else if(Integer.parseInt(Commons[i]) == 3){
+      } else if (Integer.parseInt(Commons[i]) == 3) {
         Common3.click();
       }
     }

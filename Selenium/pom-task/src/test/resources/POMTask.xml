@@ -1,10 +1,10 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Check POM">
-  <parameter name="Browser" value="chrome"/>
-  <parameter name="CSVPath" value="./src/files/input.csv"/>
+  <parameter name="Browser" value="chrome" />
+  <parameter name="CSVPath" value="./src/files/input.csv" />
   <test name="Testing POM">
     <classes>
-      <class name="pomtest.POMTask"/>
+      <class name="pomtest.POMTask" />
     </classes>
   </test>
 </suite>
