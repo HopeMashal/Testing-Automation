@@ -27,3 +27,4 @@ Testing Notes and some exercises & Books
 - Elements Select - Address Book [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/element-task/src)
 - Trello Task [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/trello-task/src)
 - Allure Task with Jenkins [GO](https://github.com/HopeMashal/Testing-Automation/tree/master/Selenium/allure-task/src)
+- Selenium Task [GO](https://github.com/HopeMashal/selenium-task)
