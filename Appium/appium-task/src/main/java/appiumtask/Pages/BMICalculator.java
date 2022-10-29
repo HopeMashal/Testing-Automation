@@ -34,5 +34,6 @@ public class BMICalculator {
     heightBox2.clear();
     AndroidElement weightBox = driver.findElement(MobileBy.id("com.codium.bmicalculator:id/weight_input_1"));
     weightBox.clear();
+    weightBox.click();
   }
 }

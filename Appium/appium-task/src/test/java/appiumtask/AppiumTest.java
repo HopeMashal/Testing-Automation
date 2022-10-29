@@ -31,6 +31,8 @@ public class AppiumTest {
     capabilities.setCapability("app", path);
     capabilities.setCapability("appPackage", "com.codium.bmicalculator");
     driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+    BMICalculator bmiPage = new BMICalculator(driver);
+    bmiPage.clickOK();
   }
 
   @DataProvider
@@ -51,7 +53,6 @@ public class AppiumTest {
   public void AppiumTestTask(String heightFt, String heightIn, String heightUnit, String weight, String weightUnit)
       throws IOException {
     BMICalculator bmiPage = new BMICalculator(driver);
-    bmiPage.clickOK();
     bmiPage.fullData(heightFt, heightIn, heightUnit, weight, weightUnit);
     TakeScreenShot.takeScreenShot(driver,
         CSVFilesPath + "heightFT_" + heightFt + "_heightIn_" + heightIn + "_weight_" + weight + ".jpg");
@@ -59,7 +60,7 @@ public class AppiumTest {
   }
 
   @AfterSuite
-	public void afterSuite() {
-		driver.quit();
-	}
+  public void afterSuite() {
+    driver.quit();
+  }
 }
